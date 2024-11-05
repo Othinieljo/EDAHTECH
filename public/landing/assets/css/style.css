@@ -1,0 +1,45 @@
+header img{
+    width: 200px;
+    height: 80px;
+}
+.btn-call-action:hover{
+    transition: 0.5s;
+    -webkit-animation: btn-content 1s;
+    animation: btn-content 1s;
+    outline: 0.2em solid #fff;
+    outline-offset: 0.2em;
+    box-shadow: 0 0 1.4em 0 #fff;
+   
+
+
+}
+.icon:hover{
+    transition: 0.5s;
+    transform: translateX(2);
+}
+.btn-call-action:hover span svg {
+  transition-duration: 1.5s;
+  animation: arrow 1s linear infinite;
+}
+
+.landing-btn{
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding-left: 1rem;
+  
+}
+@keyframes arrow {
+  0% {
+    opacity: 0;
+    margin-left: 0px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 10px;
+  }
+}
+
+
+
+  

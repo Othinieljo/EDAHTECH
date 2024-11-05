@@ -1,0 +1,307 @@
+.btn-conteiner {
+    display: flex;
+    justify-content: center;
+    --color-text: #ffffff;
+    --color-background: #ff135a;
+    --color-outline: #ff145b80;
+    --color-shadow: #00000080;
+    --color-primary:#1b8aee;
+  }
+  
+  .btn-content {
+    /* display: flex;
+    align-items: center;
+    padding: 5px 30px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: var(--color-text);
+    background: var(--color-background); */
+    transition: 1s;
+    /* border-radius: 100px;
+    box-shadow: 0 0 0.2em 0 var(--color-background); */
+  }
+  
+  .btn-content:hover, .btn-content:focus {
+    transition: 0.5s;
+    -webkit-animation: btn-content 1s;
+    animation: btn-content 1s;
+    outline: 0.1em solid transparent;
+    outline-offset: 0.2em;
+    box-shadow: 0 0 0.4em 0 var(--color-background);
+  }
+  
+  .btn-content .icon-arrow {
+    transition: 0.5s;
+    margin-right: 0px;
+    transform: scale(0.6);
+  }
+  
+  .btn-content:hover .icon-arrow {
+    transition: 0.5s;
+    margin-right: 25px;
+  }
+  
+  .icon-arrow {
+    width: 20px;
+    margin-left: 15px;
+    position: relative;
+    top: 6%;
+  }
+    
+  /* SVG */
+  #arrow-icon-one {
+    transition: 0.4s;
+    transform: translateX(-60%);
+  }
+  
+  #arrow-icon-two {
+    transition: 0.5s;
+    transform: translateX(-30%);
+  }
+  
+  .btn-content:hover #arrow-icon-three {
+    animation: color_anim 1s infinite 0.2s;
+  }
+  
+  .btn-content:hover #arrow-icon-one {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.6s;
+  }
+  
+  .btn-content:hover #arrow-icon-two {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.4s;
+  }
+  
+  /* SVG animations */
+  @keyframes color_anim {
+    0% {
+      fill: white;
+    }
+  
+    50% {
+      fill: var(--color-background);
+    }
+  
+    100% {
+      fill: white;
+    }
+  }
+  
+  /* Button animations */
+  @-webkit-keyframes btn-content {
+    0% {
+      outline: 0.2em solid var(--color-background);
+      outline-offset: 0;
+    }
+  }
+  
+  @keyframes btn-content {
+    0% {
+      outline: 0.2em solid var(--color-background);
+      outline-offset: 0;
+    }
+  }
+ /* Styles de base pour les liens */
+.link {
+  position: relative;
+  display: inline-block;
+  color: currentColor;
+  text-decoration: none;
+}
+.link-landing{
+  position: relative;
+  display: inline-block;
+  color: currentColor;
+  text-decoration: none;
+
+}
+
+/* Animation pour les éléments avant et après */
+.link::before,
+.link::after {
+  position: absolute;
+  height: 3px;
+  width: 100%; /* Ajout de la largeur */
+  background: #1b8aee;
+  top: 190%;
+  /* top: 100%; */
+  left: 0;
+  pointer-events: none;
+  
+}
+.link-landing::before,
+.link-landing::after {
+  position: absolute;
+  height: 3px;
+  width: 100%; /* Ajout de la largeur */
+  background: #1b8aee;
+  top: 100%;
+  left: 0;
+  pointer-events: none;
+  
+}
+.link:hover{
+  color: #1b8aee;
+}
+.link-landing:hover{
+  color: #1b8aee;
+}
+.link-landing::before{
+  content: '';
+}
+.link::before{
+  content: '';
+
+}
+.active{
+  color: #1b8aee;
+
+}
+.active::before,
+.active::after{
+  position: absolute;
+  height: 3px;
+  width: 100%; /* Ajout de la largeur */
+  background: #1b8aee;
+  top: 190%;
+  left: 0;
+  pointer-events: none;
+  content: '';
+
+}
+
+.link--metis::before {
+  transform-origin: 100% 50%;
+  transform: scale3d(0, 1, 1);
+  transition: transform 0.6s;
+}
+
+.link--metis:hover::before {
+  transform-origin: 0% 50%;
+  transform: scale3d(1, 1, 1);
+}
+
+
+.horizontal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 20px;
+}
+
+.btn i:before {
+  width: 14px;
+  height: 14px;
+  position: fixed;
+  color: #fff;
+  background: #0077B5;
+  padding: 10px;
+  border-radius: 50%;
+  top: 5px;
+  right: 5px;
+}
+
+.hero {
+  display: inline-block;
+  position: relative;
+  width: 400px;
+  min-width: 400px;
+  height: 300px;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+  margin: 15px;
+}
+
+.hero-profile-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero-description-bk {
+  background-image: linear-gradient(0deg, #3f5efb, #fc466b);
+  border-radius: 30px;
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  height: 70%;
+  width: 110%;
+  transform: skew(15deg, -7deg);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+.hero-description-bk-first{
+  background-image: linear-gradient(-20deg, #bb7413, #e7d25c); border-radius: 30px; position: absolute; top: 50%; right: -50px; height: 70%; width: 110%; transform: skew(15deg, -7deg); box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.second.hero-description-bk {
+  background-image: linear-gradient(-20deg, #bb7413, #e7d25c);
+}
+
+@keyframes floating {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.rounded-3xl:hover {
+  animation: floating 3s ease-in-out infinite;
+}
+.hero-logo {
+  height: 60px;
+  width: 60px;
+  border-radius: 20px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 30%;
+  left: 20px;
+  overflow: hidden;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.7);
+}
+
+.hero-logo img {
+  height: 100%;
+}
+
+.hero-description {
+  position: absolute;
+  color: #fff;
+  font-weight: 900;
+  left: 100px;
+  bottom: 26%;
+}
+
+.hero-btn {
+  position: absolute;
+  color: #fff;
+  right: 20px;
+  bottom: 10%;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+}
+
+.hero-btn a {
+  color: #fff;
+}
+
+.hero-date {
+  position: absolute;
+  color: #fff;
+  left: 20px;
+  bottom: 10%;
+}
+
+.comparison-slider-wrapper {
+  height: 400px; /* Par exemple, augmentez à 600px */
+}
+
+.comparison-slider img {
+  height: 100%; /* Assurez-vous que l'image prend toute la hauteur de la div */
+  object-fit: cover; /* Ajuste l'image pour éviter les distorsions */
+}
+

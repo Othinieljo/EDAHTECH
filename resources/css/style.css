@@ -1,0 +1,14 @@
+:root {
+   
+    --color-text: #000;
+    --color-background: #ff135a;
+    --color-outline: #ff145b80;
+    --color-shadow: #00000080;
+  }
+ /* From Uiverse.io by vinodjangid07 */ 
+
+ .landing-btn{
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%
+ }

@@ -1,0 +1,68 @@
+.glide-container {
+    background-image: url("/main/images/height.jpg");
+ /* Remplacez par l'URL de votre image */
+    background-size: cover;
+    background-position: center;
+    height: 600px; /* Augmentez la hauteur selon vos besoins */
+    
+}
+.glide__slide {
+    height: 100%; /* Chaque slide occupe toute la hauteur du container */
+}
+
+.glide__slide img {
+    height: 100%;
+    object-fit: cover; /* Assure que l'image couvre toute la hauteur de chaque slide */
+}
+.glide__track, .glide__slides{
+    height: 100%;
+    cursor: pointer;
+}
+
+/* .fancy-corners {
+    position: relative;
+    overflow: hidden;
+  } */
+   .fancy-corners{
+    position: relative;
+    background-color: #fff;
+    transform-style: preserve-3d;
+   }
+  
+  /* .fancy-corners::before,
+  .fancy-corners::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: #1ba; /* Teinte grise, changez en fonction de votre thème */
+    /* z-index: -1; */
+  */
+  .fancy-corners:after,
+  .fancy-corners:before {
+    position: absolute;
+    width: 8em;
+    height: 8em;
+    background-size: 100% 100%;
+    background-position: 0 0;
+    transform: translateZ(-1px);
+    z-index: -1;
+    -webkit-mask-image: linear-gradient(-45deg, #fff 85.5%, transparent 0);
+    mask-image: linear-gradient(-45deg, #fff 85.5%, transparent 0);
+    -webkit-mask-image: linear-gradient(-45deg, #fff 85.5%, transparent 0);
+    mask-image: linear-gradient(-45deg, #fff 85.5%, transparent 0);
+ 
+  }
+  
+  .fancy-corners::before {
+    top: -20px;
+    left: -20px;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+  }
+  
+  .fancy-corners::after {
+    bottom: -20px;
+    right: -20px;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%);
+  }
+  
