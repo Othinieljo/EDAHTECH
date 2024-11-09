@@ -32,6 +32,62 @@ Route::group(['prefix' => '{locale}', 'where' => ['locale' => 'fr|en'], 'middlew
     Route::get('/a-propos', function () {
         return view('main.contents.about-us');
     })->name('about');
+     
+
+     /* Sous rubrique de Nous connaitre */
+      
+
+     /* History */
+     Route::get('/history', function () {
+        return view('main.contents.history');
+    })->name('about.history');
+    /* History */
+
+    /* Vision */
+
+    Route::get('/vision', function () {
+        return view('main.contents.vision');
+    })->name('about.vision');
+
+
+    /* Vision */
+
+    /*Valeurs */
+
+    Route::get('/values', function () {
+        return view('main.contents.values');
+    })->name('about.values');
+
+
+    /*Valeurs */
+
+    /* Notre equipe */
+
+    Route::get('/team', function () {
+        return view('main.contents.team');
+    })->name('about.team');
+
+
+    /* Notre equipe */
+
+    /* Partners */
+
+    Route::get('/partners', function () {
+        return view('main.contents.partners');
+    })->name('about.partners');
+
+    /* Partners */
+
+
+
+     /* Sous rubrique de Nous connaitre */
+
+
+
+
+    /* Nous connaitre  */
+
+
 
     /* Nos services */
 
@@ -98,6 +154,55 @@ Route::get('/accueil', function () {
  Route::get('/a-propos', function () {
     return view('main.contents.about-us');
 })->name('about');
+
+
+ /* Sous rubrique de Nous connaitre */
+      
+
+     /* History */
+     Route::get('/history', function () {
+        return view('main.contents.about-us');
+    })->name('about.history');
+    /* History */
+
+    /* Vision */
+
+    Route::get('/vision', function () {
+        return view('main.contents.vision');
+    })->name('about.vision');
+
+
+    /* Vision */
+
+    /*Valeurs */
+
+    Route::get('/values', function () {
+        return view('main.contents.values');
+    })->name('about.values');
+
+
+    /*Valeurs */
+
+    /* Notre equipe */
+
+    Route::get('/team', function () {
+        return view('main.contents.team');
+    })->name('about.team');
+
+
+    /* Notre equipe */
+
+    /* Partners */
+
+    Route::get('/partners', function () {
+        return view('main.contents.partners');
+    })->name('about.partners');
+
+    /* Partners */
+
+
+
+     /* Sous rubrique de Nous connaitre */
 
  /* Nos services */
 

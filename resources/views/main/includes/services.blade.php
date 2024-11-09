@@ -146,6 +146,11 @@
           </div>
         </a>
       </li>
+     
+      <!-- Répétez les autres éléments de la même manière -->
+    </ul>
+
+    <ul class="flex justify-center">
       <li class="flex">
         <a href="#" class="relative block w-full h-[400px] overflow-hidden text-none rounded-[40px] group">
           <img src="{{asset('main/images/services/IOT.jpg')}}" class="w-full h-full object-cover" alt="" />
@@ -172,6 +177,5 @@
           </div>
         </a>
       </li>
-      <!-- Répétez les autres éléments de la même manière -->
     </ul>
   </div>

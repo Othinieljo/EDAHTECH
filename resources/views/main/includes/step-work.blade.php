@@ -1,4 +1,4 @@
-<div class="container mx-auto">
+{{-- <div class="container mx-auto">
     <h1 class="text-3xl font-bold text-center mb-8">Procédure d'exécution des travaux</h1>
     <div class="relative flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0 md:space-x-8 p-8 bg-white rounded-lg shadow-lg">
       <!-- Étape 1 -->
@@ -64,4 +64,4 @@
         </p>
       </div>
     </div>
-  </div>
+  </div> --}}

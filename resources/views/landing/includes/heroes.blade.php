@@ -1,6 +1,6 @@
 <section style="height: 100vh; position: relaative; overflow: hidden; background-size: cover;">
     <video autoplay muted loop class="hero-background-video w-full" style=" height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;" >
-        <source src="{{asset('landing/assets/videos/edah.mp4')}}" type="video/mp4">
+        <source src="{{asset('landing/assets/videos/videos2.mp4')}}" type="video/mp4">
     </video>
    
 
