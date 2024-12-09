@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{-- <meta name="csrf-token" content="{{ csrf_token() }}"> --}}
+
     <title>{{__('landing/layout/master.page-title')}}</title>
     @vite('resources/css/app.css')
     <link rel="stylesheet" href="{{asset('landing/assets/css/style.css')}}">
@@ -15,9 +17,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 </head>
-<body class="font-raleway">
+<body class="font-raleway " style="overflow-x: hidden">
+    <div class="overflow-x-hidden">
+
+   
      @include('landing.includes.headers')
      @yield('landing-corps-edahtech')
+    </div>
 
     
 
@@ -63,7 +69,23 @@
 
    
     <script type="module" src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/landing/mail.js')}}"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        for (let i = 0; i < 100; i++) {
+    const star = document.createElement('div');
+    star.className = 'star';
+    star.style.left = `${Math.random() * 100}vw`;
+    star.style.top = `${Math.random() * -100}vh`;
+    star.style.animationDuration = `${Math.random() * 5 + 2}s`;
+    document.body.appendChild(star);
+}
+
+
+
+    </script>
+
+
 </body>
 </html>

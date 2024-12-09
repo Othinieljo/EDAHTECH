@@ -2,7 +2,7 @@
 
 @section('page-title')
     <title>
-        {{__("main/contents/index.page-title")}}
+        À propos - EDAHTECH
     </title>
 
 
@@ -11,11 +11,12 @@
 @section('app-header')
 
 @php
-    $data = [
+   $data = [
         'acceuil' => '',
         'about' => 'active',
         'products' => '',
-        'news' => '',
+        'media' => '',
+        'expertises' => '',
         'services' => '',
         'carriere' => '',
         'contact' => '',
@@ -30,7 +31,7 @@
 
 <div class="relative bg-cover bg-center h-96" style="background-image: url('/main/images/height.jpg');">
     <!-- Overlay -->
-    <div class="absolute inset-0 bg-black opacity-50"></div>
+    <div class="absolute inset-0 bg-blue-400 opacity-50"></div>
     
     <!-- Container -->
     <div class="relative container mx-auto px-4 h-full flex items-center">

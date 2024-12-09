@@ -1,6 +1,6 @@
 
 
-<footer class="bg-[#021738] dark:bg-gray-900">
+{{-- <footer class="bg-[#021738] dark:bg-gray-900">
     <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0">
@@ -39,17 +39,7 @@
                     </li>
                   </ul>
               </div>
-              {{-- <div>
-                  <h2 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Nos valeurs</h2>
-                  <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                      <li class="mb-4">
-                          <a href="#" class="hover:underline">Privacy Policy</a>
-                      </li>
-                      <li>
-                          <a href="#" class="hover:underline">Terms &amp; Conditions</a>
-                      </li>
-                  </ul>
-              </div> --}}
+              
           </div>
       </div>
       <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
@@ -80,8 +70,227 @@
           </div>
       </div>
     </div>
-</footer>
+</footer> --}}
 
+
+<!--
+  Heads up! 👋
+
+  This component comes with some `rtl` classes. Please remove them if they are not needed in your project.
+
+  Plugins:
+    - @tailwindcss/forms
+-->
+
+<footer class="bg-gradient-to-r from-blue-100 via-blue-200 to-blue-300 dark:bg-gray-900">
+    <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+      <div
+        class="flex flex-col items-center gap-4 rounded-lg bg-primary p-6 shadow-lg sm:flex-row sm:justify-between"
+      >
+        <strong class="text-xl text-white sm:text-xl">Let's THINK TO CHANGE THE WORLD</strong>
+  
+        <a
+          class="inline-flex items-center gap-2 rounded-full border border-white bg-white px-8 py-3 text-primary hover:bg-transparent hover:text-white focus:outline-none focus:ring active:bg-white/90"
+          href="#"
+        >
+          <span class="text-sm font-medium">Nous contacter</span>
+  
+          <svg
+            class="size-5 rtl:rotate-180"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M17 8l4 4m0 0l-4 4m4-4H3"
+            />
+          </svg>
+        </a>
+      </div>
+  
+      <div class="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="text-center sm:text-left">
+          <p class="text-lg font-bold text-gray-900">Nous connaitre</p>
+  
+          <ul class="mt-8 space-y-4 text-sm">
+            <li>
+              <a 
+                class="relative text-gray-700 font-medium transition hover:text-primary group" 
+                href="{{ route('about.history') }}"
+              >
+                <span class="absolute inset-0 transition-transform scale-x-0 bg-primary opacity-20 group-hover:scale-x-100 transform origin-left"></span>
+                <span class="relative">EDAHTECH</span>
+              </a>
+            </li>
+            <li>
+              <a 
+                class="relative text-gray-700 font-medium transition hover:text-primary group" 
+                href="{{ route('about.team') }}"
+              >
+                <span class="absolute inset-0 transition-transform scale-x-0 bg-primary opacity-20 group-hover:scale-x-100 transform origin-left"></span>
+                <span class="relative">Equipe</span>
+              </a>
+            </li>
+            <li>
+              <a 
+                class="relative text-gray-700 font-medium transition hover:text-primary group" 
+                href="{{ route('about.vision') }}"
+              >
+                <span class="absolute inset-0 transition-transform scale-x-0 bg-primary opacity-20 group-hover:scale-x-100 transform origin-left"></span>
+                <span class="relative">Mission et Vision</span>
+              </a>
+            </li>
+            <li>
+              <a 
+                class="relative text-gray-700 font-medium transition hover:text-primary group" 
+                href="{{ route('about.values') }}"
+              >
+                <span class="absolute inset-0 transition-transform scale-x-0 bg-primary opacity-20 group-hover:scale-x-100 transform origin-left"></span>
+                <span class="relative">Nos valeurs</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+  
+        <div class="text-center sm:text-left">
+          <p class="text-lg font-bold text-gray-900">Page</p>
+  
+          <ul class="mt-8 space-y-4 text-sm">
+            <li>
+              <a 
+                class="relative text-gray-700 font-medium transition hover:text-primary group" 
+                href="{{ route('expertise') }}"
+              >
+                <span class="absolute inset-0 transition-transform scale-x-0 bg-primary opacity-20 group-hover:scale-x-100 transform origin-left"></span>
+                <span class="relative">Nos domaines d'expertises</span>
+              </a>
+            </li>
+            
+  
+            <li>
+              <a 
+                class="relative text-gray-700 font-medium transition hover:text-primary group" 
+                href="{{ route('services') }}"
+              >
+                <span class="absolute inset-0 transition-transform scale-x-0 bg-primary opacity-20 group-hover:scale-x-100 transform origin-left"></span>
+                <span class="relative">Prestations & Services</span>
+              </a>
+            </li>
+            <li>
+              <a 
+                class="relative text-gray-700 font-medium transition hover:text-primary group" 
+                href="{{ route('contact') }}"
+              >
+                <span class="absolute inset-0 transition-transform scale-x-0 bg-primary opacity-20 group-hover:scale-x-100 transform origin-left"></span>
+                <span class="relative">Contact</span>
+              </a>
+            </li>
+            <li>
+              <a 
+                class="relative text-gray-700 font-medium transition hover:text-primary group" 
+                href="{{ route('career') }}"
+              >
+                <span class="absolute inset-0 transition-transform scale-x-0 bg-primary opacity-20 group-hover:scale-x-100 transform origin-left"></span>
+                <span class="relative">Carrière</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+  
+        <div class="text-center sm:text-left md:col-span-4 lg:col-span-2">
+          <p class="text-lg font-bold text-gray-900">Newsletter</p>
+  
+          <div class="mx-auto mt-8 max-w-md sm:ms-0">
+            <p class="text-center leading-relaxed text-gray-500 ltr:sm:text-left rtl:sm:text-right">
+              Restez à l'avant-garde de l'innovation !
+            </p>
+  
+            <form class="mt-6">
+              <div class="relative max-w-lg">
+                <label class="sr-only" for="email"> Email </label>
+      
+                <input
+                  class="w-full rounded-full border-gray-200 bg-gray-100 p-4 pe-32 text-sm font-medium"
+                  id="email"
+                  type="email"
+                  placeholder="Entrez votre email"
+                />
+      
+                <button
+                  class="absolute end-1 top-1/2 -translate-y-1/2 rounded-full bg-blue-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-blue-700"
+                >
+                S'abonner
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+  
+      <div class="mt-16">
+        <ul class="flex justify-center gap-6 sm:justify-end">
+          <li>
+            <a
+              href="https://www.facebook.com/Edahtech?mibextid=LQQJ4d"
+              rel="noreferrer"
+              target="_blank"
+              class="text-primary/75 transition hover:text-primary"
+            >
+              <span class="sr-only">Facebook</span>
+              <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  fill-rule="evenodd"
+                  d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/company/edahtech/"
+              rel="noreferrer"
+              target="_blank"
+              class="text-primary/75 transition hover:text-primary"
+            >
+              <span class="sr-only">LinkedIn</span>
+              <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 20h-3v-10h3v10zm-1.5-11.5c-.96 0-1.5-.77-1.5-1.5s.54-1.5 1.5-1.5 1.5.77 1.5 1.5-.54 1.5-1.5 1.5zm13.5 11.5h-3v-5.6c0-3.04-4-2.8-4 0v5.6h-3v-10h3v1.4c1.4-2.59 7-2.78 7 2.47v6.13z"
+                />
+              </svg>
+            </a>
+          </li>
+          
+  
+         
+  
+        
+  
+          
+  
+         
+        </ul>
+  
+        <div class="mt-16 sm:flex sm:items-center sm:justify-between ">
+          <div class="flex justify-center text-teal-600 sm:justify-start">
+            <a href="" class="flex items-center">
+                <img src="{{asset('logo.svg')}}" class="h-16 me-3" alt="EDAHTECH" />
+                
+            </a>
+          </div>
+  
+          <p class="mt-4 text-center text-sm text-gray-500 sm:mt-0 sm:text-right">
+            &copy; 2024 Tout Droit Réservé EDAHTECH,
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
 

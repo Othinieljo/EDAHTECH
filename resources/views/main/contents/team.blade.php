@@ -2,7 +2,7 @@
 
 @section('page-title')
     <title>
-        {{__("main/contents/index.page-title")}}
+        Équipe - EDAHTECH
     </title>
 
 
@@ -11,16 +11,19 @@
 @section('app-header')
 
 @php
-    $data = [
+
+$data = [
         'acceuil' => '',
         'about' => 'active',
         'products' => '',
-        'news' => '',
+        'media' => '',
+        'expertises' => '',
         'services' => '',
         'carriere' => '',
         'contact' => '',
    
     ];
+    
     
 @endphp
 
@@ -28,20 +31,62 @@
 @endsection
 @section('main-corps')
 
+
 <div class="relative bg-cover bg-center h-96" style="background-image: url('/main/images/height.jpg');">
     <!-- Overlay -->
-    <div class="absolute inset-0 bg-black opacity-50"></div>
+    <div class="absolute inset-0 bg-blue-400 opacity-50"></div>
     
     <!-- Container -->
     <div class="relative container mx-auto px-4 h-full flex items-center">
         <div class="text-center w-full">
             <h2 class="text-5xl font-extrabold text-white drop-shadow-lg">Nous Connaître</h2>
-            <p class="text-white mt-2 text-lg font-light tracking-wide">
-                <span class="text-gray-300">Accueil</span> <span class="mx-2 text-white">&#x2022;</span> <span class="text-gray-300">Equipe dirigeante</span>
-            </p>
         </div>
     </div>
-</div>
+  
+    <!-- Breadcrumb Navigation -->
+    <nav aria-label="Breadcrumb" class="absolute bottom-0 left-0  font-bold">
+        <div class="container  pr-16">
+            <ol class="flex overflow-hidden  border border-gray-200 text-primary bg-white px-4 ">
+                <li class="flex items-center">
+                    <a
+                        href="{{route('accueil')}}"
+                        class="flex h-10 items-center gap-1.5 bg-gray-100 px-4 transition hover:text-yellow-600"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="size-4"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                            />
+                        </svg>
+                        <span class="ms-1.5  font-bold text-lg">Accueil</span>
+                    </a>
+                </li>
+  
+                <li class="relative flex items-center">
+                    <span
+                        class="absolute inset-y-0 -start-px h-10 w-4 bg-gray-100 [clip-path:_polygon(0_0,_0%_100%,_100%_50%)] rtl:rotate-180"
+                    >
+                    </span>
+                    <a
+                        href="#"
+                        class="flex h-10 items-center bg-white pe-4 ps-8 text-lg font-bold transition hover:text-yellow-600"
+                    >
+                    Equipe dirigeante
+                    </a>
+                </li>
+            </ol>
+        </div>
+    </nav>
+  </div>
+
 
 
  
@@ -57,41 +102,7 @@
 
 {{-- Nos services  --}}
 
-<div class="container mx-auto">
-    <div class="text-center">
-      <h3 class="text-2xl font-bold">Vos premiers interlocuteurs</h3>
-      <p class="text-lg">---</p>
-    </div>
-  
-    <hr class="my-6 border-gray-300">
-  
-    <div class="flex flex-wrap justify-center text-center space-y-6">
-        <div class="w-full md:w-1/3 px-4">
-            <div class="bg-white p-6 shadow-md rounded-lg">
-                <div class="relative overflow-hidden rounded-full w-32 h-32 mx-auto mb-4 shadow-lg transition-all duration-300 hover:scale-105">
-                    <a href="{{ asset('images/equipe/dg.jpeg') }}" class="absolute inset-0 flex items-center justify-center bg-gray-800 bg-opacity-0 hover:bg-opacity-70 transition-all duration-300">
-                      <i class="text-white text-2xl fas fa-external-link-alt opacity-0 hover:opacity-100 transition-opacity duration-300"></i>
-                    </a>
-                    <img src="{{ asset('images/equipe/dg.jpeg') }}" alt="Profile Picture" class="rounded-full w-full h-full object-cover">
-                  </div>
-                  
-              <h3 class="text-xl font-semibold">M.KOHOU Zon Seraphin</h3>
-              <p class="text-gray-600 text-sm">President & CEO at EDAHTECH</p>
-              <a href="https://www.linkedin.com/in/lionel-gino-ondo-etoughe-a447a331?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="inline-block mt-4 px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-600">Découvrir le profil</a>
-            </div>
-          </div>
-  
-      
-
-
-    </div>
-  
-    <hr class="my-6 border-gray-300">
-  
-    <!-- Repeat the above code for additional team members -->
-  
-  </div>
-  
+@include('main.includes.team')
 
 
 

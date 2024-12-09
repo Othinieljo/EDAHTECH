@@ -15,7 +15,8 @@
         'acceuil' => 'active',
         'about' => '',
         'products' => '',
-        'news' => '',
+        'media' => '',
+        'expertises' => '',
         'services' => '',
         'carriere' => '',
         'contact' => '',
@@ -52,21 +53,51 @@
     </div>
 </div> --}}
   <!-- COMPARISON SLIDER CODE END -->
-  <div class="glide mx-auto w-full glide-container relative">
+  <div class="glide mx-auto w-full glide-container relative font-poppins">
     {{-- <h2 class="absolute top-1/4 left-1/4 text-4xl font-bold text-white z-10">
       Let's think to change the world
   </h2> --}}
   <div class="glide__track" data-glide-el="track">
     <ul class="glide__slides">
         <li class="glide__slide">
-          <div class="relative overflow-hidden shadow-lg flex flex-col justify-between  h-full text-white bg-cyan-950 bg-opacity-70 rounded-lg transition-transform hover:scale-105">
+          <div class="relative overflow-hidden shadow-lg flex flex-col justify-between  h-full text-white bg-blue-400 bg-opacity-50  rounded-lg transition-transform hover:scale-105">
             <div class="p-8">
-                <h2 class="text-4xl font-bold mb-4">Innovation Durable</h2>
+                <h2 class="text-3xl font-bold mb-4 text-yellow-500" >Séminaire de planification stratégique Horizon 2025-2028, du 14 au 18 janvier 2025</h2>
+                
+            </div>
+            <div class="p-8">
+              <p class="text-sm mb-4">Nous révolutionnons la manière dont les entreprises connectent et innovent. Profitez d'une technologie avancée et d'une assistance dédiée.</p>
+                <a href="#" class="mt-6 px-6 py-3 text-xl font-bold flex items-center transition duration-300 ease-in-out text-yellow-500 shadow-2xl  dark:bg-gray-900">
+                  Découvrir plus 
+                    <x-css-arrow-right class="ml-2 w-4 h-4" />
+                </a>
+            </div>
+        </div>
+        </li>
+        <li class="glide__slide">
+          <div class="relative overflow-hidden shadow-lg flex flex-col justify-between  h-full text-white bg-blue-400 bg-opacity-50 rounded-lg transition-transform hover:scale-105">
+            <div class="p-8">
+                <h2 class="text-3xl font-bold mb-4 text-yellow-500">EDAHTECH sera présent à INNOVADD 2025</h2>
+                
+            </div>
+            <div class="p-8">
+              <p class="text-sm mb-4">Nos experts sont à votre disposition pour garantir une assistance technique proactive et efficace, 24h/24.</p>
+                <a href="#" class="mt-6 px-6 py-3 text-xl font-bold flex items-center transition duration-300 ease-in-out text-yellow-500 shadow-2xl  dark:bg-gray-900">
+                  Découvrir plus
+                    <x-css-arrow-right class="ml-2 w-4 h-4" />
+                </a>
+            </div>
+        </div>
+        </li>
+        <li class="glide__slide">
+          <div class="relative overflow-hidden shadow-lg flex flex-col justify-between  h-full text-white bg-blue-400 bg-opacity-50 rounded-lg transition-transform hover:scale-105">
+            <div class="p-8">
+                <h2 class="text-3xl font-bold mb-4 text-yellow-500">EDAHTECH sera présent au Forum Mondial des Télécoms en 2025 à Barcelone</h2>
                 
             </div>
             <div class="p-8">
               <p class="text-sm mb-4">Engagés pour un avenir meilleur, nous mettons l'innovation au service de la durabilité et du progrès collectif.</p>
-                <a href="#" class="mt-6 px-6 py-3 text-xl font-medium flex items-center transition duration-300 ease-in-out">
+                <a href="#" class="mt-6 px-6 py-3 text-xl font-bold flex items-center transition duration-300 ease-in-out text-yellow-500 shadow-2xl  dark:bg-gray-900">
                     Découvrir plus
                     <x-css-arrow-right class="ml-2 w-4 h-4" />
                 </a>
@@ -74,44 +105,14 @@
         </div>
         </li>
         <li class="glide__slide">
-          <div class="relative overflow-hidden shadow-lg flex flex-col justify-between  h-full text-white bg-cyan-950 bg-opacity-70 rounded-lg transition-transform hover:scale-105">
-            <div class="p-8">
-                <h2 class="text-4xl font-bold mb-4">Innovation Durable</h2>
-                
-            </div>
-            <div class="p-8">
-              <p class="text-sm mb-4">Engagés pour un avenir meilleur, nous mettons l'innovation au service de la durabilité et du progrès collectif.</p>
-                <a href="#" class="mt-6 px-6 py-3 text-xl font-medium flex items-center transition duration-300 ease-in-out">
-                    Découvrir plus
-                    <x-css-arrow-right class="ml-2 w-4 h-4" />
-                </a>
-            </div>
-        </div>
-        </li>
-        <li class="glide__slide">
-          <div class="relative overflow-hidden shadow-lg flex flex-col justify-between  h-full text-white bg-cyan-950 bg-opacity-70 rounded-lg transition-transform hover:scale-105">
-            <div class="p-8">
-                <h2 class="text-4xl font-bold mb-4">Innovation Durable</h2>
-                
-            </div>
-            <div class="p-8">
-              <p class="text-sm mb-4">Engagés pour un avenir meilleur, nous mettons l'innovation au service de la durabilité et du progrès collectif.</p>
-                <a href="#" class="mt-6 px-6 py-3 text-xl font-medium flex items-center transition duration-300 ease-in-out">
-                    Découvrir plus
-                    <x-css-arrow-right class="ml-2 w-4 h-4" />
-                </a>
-            </div>
-        </div>
-        </li>
-        <li class="glide__slide">
-            <div class="relative overflow-hidden shadow-lg flex flex-col justify-between   h-full text-white bg-cyan-950 bg-opacity-70 rounded-lg ">
+            <div class="relative overflow-hidden shadow-lg flex flex-col justify-between   h-full text-white bg-blue-400 bg-opacity-50 rounded-lg ">
                 <div class="p-8">
-                    <h2 class="text-4xl font-bold mb-4">Innovation Durable</h2>
+                    <h2 class="text-3xl font-bold mb-4 text-yellow-500">Innovation Durable</h2>
                     
                 </div>
                 <div class="p-8">
                   <p class="text-sm mb-4">Engagés pour un avenir meilleur, nous mettons l'innovation au service de la durabilité et du progrès collectif.</p>
-                    <a href="#" class="mt-6 px-6 py-3 text-xl  font-medium flex items-center transition duration-300 ease-in-out">
+                    <a href="#" class="mt-6 px-6 py-3 text-xl  font-bold flex items-center transition duration-300 ease-in-out text-yellow-500 shadow-2xl  dark:bg-gray-900">
                         Découvrir plus
                         <x-css-arrow-right class="ml-2 w-4 h-4" />
                     </a>

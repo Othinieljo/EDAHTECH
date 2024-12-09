@@ -2,7 +2,7 @@
 
 @section('page-title')
     <title>
-        {{__("main/contents/index.page-title")}}
+        Actualites - EDAHTECH
     </title>
 
 
@@ -15,7 +15,8 @@
         'acceuil' => '',
         'about' => '',
         'products' => '',
-        'news' => 'active',
+        'media' => 'active',
+        'expertises' => '',
         'services' => '',
         'carriere' => '',
         'contact' => '',

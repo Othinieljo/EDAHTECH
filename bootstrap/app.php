@@ -18,7 +18,9 @@ return Application::configure(basePath: dirname(__DIR__))
         );
      
         $middleware->web(append: [
-            \App\Http\Middleware\Localization::class,
+            // \App\Http\Middleware\Localization::class,
+            // \App\Http\Middleware\AuthenticateAdmin::class,
+            
         ]);
         //
     })

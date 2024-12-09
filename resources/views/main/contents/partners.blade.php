@@ -2,7 +2,7 @@
 
 @section('page-title')
     <title>
-        {{__("main/contents/index.page-title")}}
+        Équipe - EDAHTECH
     </title>
 
 
@@ -11,11 +11,12 @@
 @section('app-header')
 
 @php
-    $data = [
+     $data = [
         'acceuil' => '',
         'about' => 'active',
         'products' => '',
-        'news' => '',
+        'media' => '',
+        'expertises' => '',
         'services' => '',
         'carriere' => '',
         'contact' => '',
