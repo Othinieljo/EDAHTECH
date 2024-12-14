@@ -1,45 +1,45 @@
-async function handleEmailSubmission() {
+async function handleEmailSubmission(event) {
+    event.preventDefault(); // Empêche le rechargement de la page
+
     const emailInput = document.getElementById("emailInput");
     const submitButton = document.getElementById("submitButton");
     const buttonText = document.getElementById("buttonText");
-    const loader = document.getElementById("loader");
+    const loader = document.getElementById("loader1");
 
-    // Vérifier si l'email est valide
     const email = emailInput.value.trim();
-    if (!email || !validateEmail(email)) {
+    if (!validateEmail(email)) {
         alert("Veuillez entrer un email valide.");
         return;
     }
 
-    // Désactiver le bouton et afficher le loader
     submitButton.disabled = true;
     buttonText.classList.add("hidden");
     loader.classList.remove("hidden");
 
     try {
-        // Envoyer la requête POST
+        const csrfToken = document.querySelector('input[name="_token"]').value;
+
         const response = await fetch('/contacts', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-               
+                'X-CSRF-TOKEN': csrfToken, // Inclus le token CSRF
             },
             body: JSON.stringify({ email, type: 'newsletter' }),
         });
 
         const result = await response.json();
 
-        if (response.ok) {
-            alert(result.message || `Email "${email}" enregistré avec succès !, ${response.status}`);
-            emailInput.value = ""; // Réinitialiser le champ
-        } else {
-            alert(result.message || "Une erreur s'est produite lors de l'enregistrement.");
-        }
+        // if (response.ok) {
+        //     alert(result.message || `Email "${email}" enregistré avec succès !`);
+        //     emailInput.value = "";
+        // } else {
+        //     alert(result.message || "Une erreur s'est produite.");
+        // }
     } catch (error) {
-        console.error("Erreur :", error);
-        alert("Une erreur inattendue s'est produite. Veuillez réessayer.");
+        // console.error("Erreur :", error);
+        // alert("Une erreur inattendue s'est produite.");
     } finally {
-        // Réactiver le bouton et masquer le loader
         submitButton.disabled = false;
         buttonText.classList.remove("hidden");
         loader.classList.add("hidden");

@@ -1,3 +1,33 @@
+<div id="loader" class="bg-[#e8e8e8]">
+
+    <div class="boxes">
+        <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+</div>
 <header class="w-full   border-b">
     <!-- Premier niveau du header : Contact et choix de langue -->
     <div class="bg-gray-100 ">
@@ -24,10 +54,10 @@
                 <!-- Menu déroulant pour les langues -->
                 <ul class="absolute -right-3 mt-2 bg-white text-gray-800 rounded-lg shadow-md hidden group-hover:block w-28 z-10">
                     <li>
-                        <a href="{{ url('fr' . '/' . implode('/', array_slice(Request::segments(), 1))) }}" class="block px-4 py-2 hover:bg-gray-100 ">Français</a>
+                        <a href="{{ route('lang.switch', 'fr') }}" class="block px-4 py-2 hover:bg-gray-100 ">Français</a>
                     </li>
                     <li>
-                        <a href="{{ url('en' . '/' . implode('/', array_slice(Request::segments(), 1))) }}" class="block px-4 py-2 hover:bg-gray-100">English</a>
+                        <a href="{{ route('lang.switch', 'en') }}" class="block px-4 py-2 hover:bg-gray-100">English</a>
                     </li>
                     
                     
@@ -41,11 +71,13 @@
     <div class="container mx-auto flex justify-between items-center px-6  ">
         <!-- Logo de l'entreprise -->
         <div class="flex items-center">
-             <a href="/"><img src="{{ asset('logo.svg') }}" alt="EDAHTECH" class="h-10"></a>
+             <a href="/">
+                <img src="{{ asset('logo.svg') }}" alt="EDAHTECH" class="w-64 md:w-96">
+            </a>
         </div>
 
 
-        <div class="sm:hidden flex items-center">
+        <div class="xl:hidden flex items-center">
             <button id="menu-toggle" class="text-gray-800 focus:outline-none">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
@@ -76,7 +108,7 @@
 
         <div id="mobile-menu" class="fixed top-0 left-0 w-full h-screen bg-white z-50 transform -translate-x-full transition-transform duration-300">
             <div class="flex items-center justify-between px-6 py-4 border-b">
-                <span class="text-lg font-bold">Menu</span>
+                <span class="text-lg font-bold"> {{ __('main/includes/headers.mobile-menu')}} </span>
                 <button id="close-menu" class="text-gray-800 focus:outline-none">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
@@ -84,28 +116,28 @@
                 </button>
             </div>
             <ul class="p-6 space-y-4">
-                <li><a href="{{ route('accueil') }}" class="block text-gray-800 hover:text-primary">Accueil</a></li>
+                <li><a href="{{ route('accueil') }}" class="block text-gray-800 hover:text-primary"> {{__('main/includes/headers.menu-1')}} </a></li>
                 <li>
                     <button class="flex items-center justify-between w-full text-left text-gray-800 hover:text-primary" data-submenu="submenu-about">
-                        <span>Nous connaitre</span>
+                        <span> {{__('main/includes/headers.menu-2')}} </span>
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                         </svg>
                     </button>
                 </li>
-                <li><a href="{{ route('expertise') }}" class="block text-gray-800 hover:text-primary">Domaines d'expertises</a></li>
-                <li><a href="{{ route('services') }}" class="block text-gray-800 hover:text-primary">Prestations & Services</a></li>
+                <li><a href="{{ route('expertise') }}" class="block text-gray-800 hover:text-primary"> {{__('main/includes/headers.menu-3')}} </a></li>
+                <li><a href="{{ route('services') }}" class="block text-gray-800 hover:text-primary"> {{__('main/includes/headers.menu-4')}} </a></li>
                 <li>
                     <button class="flex items-center justify-between w-full text-left text-gray-800 hover:text-primary" data-submenu="submenu-media">
-                        <span>Media</span>
+                        <span> {{__('main/includes/headers.menu-5')}} </span>
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                         </svg>
                     </button>
                 </li>
-                <li><a href="{{ route('career') }}" class="block text-gray-800 hover:text-primary">Carrière
+                <li><a href="{{ route('career') }}" class="block text-gray-800 hover:text-primary">{{__('main/includes/headers.menu-6')}}
                 </a></li>
-                <li><a href="{{ route('contact') }}" class="block text-gray-800 hover:text-primary">Contact</a></li>
+                <li><a href="{{ route('contact') }}" class="block text-gray-800 hover:text-primary"> {{__('main/includes/headers.menu-7')}} </a></li>
             </ul>
         </div>
         
@@ -117,12 +149,13 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
                     </svg>
                 </button>
-                <span class="text-lg font-bold">Nous connaitre</span>
+                <span class="text-lg font-bold">{{__('main/includes/headers.menu-2')}} </span>
             </div>
             <ul class="p-6 space-y-4">
-                <li><a href="{{ route('about.history') }}" class="block text-gray-800 hover:text-primary">Notre Histoire</a></li>
-                <li><a href="{{ route('about.team') }}" class="block text-gray-800 hover:text-primary">Notre Équipe</a></li>
-                <li><a href="{{ route('about.values') }}" class="block text-gray-800 hover:text-primary">Nos Valeurs</a></li>
+                <li><a href="{{ route('about.history') }}" class="block text-gray-800 hover:text-primary"> {{__("main/includes/headers.sous-menu-2-1")}} </a></li>
+                <li><a href="{{ route('about.team') }}" class="block text-gray-800 hover:text-primary">{{__('main/includes/headers.sous-menu-2-2')}} </a></li>
+                <li><a href="{{ route('about.vision') }}" class="block text-gray-800 hover:text-primary">{{__('main/includes/headers.sous-menu-2-3')}} </a></li>
+                <li><a href="{{ route('about.values') }}" class="block text-gray-800 hover:text-primary">{{__('main/includes/headers.sous-menu-2-4')}} </a></li>
             </ul>
         </div>
 
@@ -133,40 +166,40 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
                     </svg>
                 </button>
-                <span class="text-lg font-bold">Media</span>
+                <span class="text-lg font-bold"> {{__('main/includes/headers.menu-5')}} </span>
             </div>
             <ul class="p-6 space-y-4">
-                <li><a href="{{ route('media.news') }}" class="block text-gray-800 hover:text-primary">Actualités</a></li>
-                <li><a href="{{ route('media.publi-reportages') }}" class="block text-gray-800 hover:text-primary">Publi-reportages</a></li>
-                <li><a href="{{ route('media.galerie') }}" class="block text-gray-800 hover:text-primary">Galerie photo</a></li>
+                <li><a href="{{ route('media.news') }}" class="block text-gray-800 hover:text-primary">{{__('main/includes/headers.sous-menu-5-1')}} </a></li>
+                <li><a href="{{ route('media.publi-reportages') }}" class="block text-gray-800 hover:text-primary"> {{__('main/includes/headers.sous-menu-5-2')}} </a></li>
+                <li><a href="{{ route('media.galerie') }}" class="block text-gray-800 hover:text-primary"> {{__('main/includes/headers.sous-menu-5-3')}} </a></li>
             </ul>
         </div>
         
 
-        <nav id="menu" class="hidden sm:flex">
+        <nav id="menu" class="hidden xl:flex">
             <ul class="flex space-x-6">
-                <li class="py-6"><a href="{{route('accueil')}}" class="text-gray-800 hover:text-primary link link--metis font-medium {{$acceuil}}">Accueil</a></li>
+                <li class="py-6"><a href="{{route('accueil')}}" class="text-gray-800 hover:text-primary text-xl link link--metis font-medium {{$acceuil}}"> {{__('main/includes/headers.menu-1')}} </a></li>
                 <li class="relative group py-6">
-                    <a href="{{route('about')}}" class="text-gray-800 hover:text-primary link link--metis font-medium {{$about}}">Nous connaitre</a>
+                    <a href="{{route('about')}}" class="text-gray-800 hover:text-primary text-xl link link--metis font-medium {{$about}}">{{__('main/includes/headers.menu-2')}} </a>
                     <ul class="absolute left-0 mt-6 bg-white text-gray-800 rounded-lg shadow-md hidden group-hover:block w-40 z-10">
                         <li class="animated-item border-b border-blue-500">
                             <a href="{{ route('about.history') }}" class="block px-4 py-2 relative z-10 text-gray-800 transition-colors duration-300 ease-in-out hover:text-white">
-                                EDAHTECH
+                               {{__('main/includes/headers.sous-menu-2-1')}}
                             </a>
                         </li>
                         <li class="animated-item border-b border-blue-500">
                             <a href="{{ route('about.team') }}" class="block px-4 py-2 relative z-10 text-gray-800 transition-colors duration-300 ease-in-out hover:text-white">
-                                Notre Équipe
+                                {{__('main/includes/headers.sous-menu-2-2')}}
                             </a>
                         </li>
                         <li class="animated-item border-b border-blue-500">
                             <a href="{{ route('about.vision') }}" class="block px-4 py-2 relative z-10 text-gray-800 transition-colors duration-300 ease-in-out hover:text-white">
-                                Mission et Vision
+                               {{__('main/includes/headers.sous-menu-2-3')}}
                             </a>
                         </li>
                         <li class="animated-item border-b border-blue-500">
                             <a href="{{ route('about.values') }}" class="block px-4 py-2 relative z-10 text-gray-800 transition-colors duration-300 ease-in-out hover:text-white">
-                                Nos Valeurs
+                                {{__('main/includes/headers.sous-menu-2-4')}}
                             </a>
                         </li>
                     </ul>
@@ -174,7 +207,7 @@
                     
                 </li>
                 <li class="py-6 relative group">
-                    <a href="{{route('expertise')}}" class="text-gray-800 hover:text-primary link link--metis font-medium {{$expertises}}">Domaines d'expertises</a>
+                    <a href="{{route('expertise')}}" class="text-gray-800 hover:text-primary text-xl link link--metis font-medium {{$expertises}}">{{__('main/includes/headers.menu-3')}} </a>
                     {{-- <ul class="absolute left-0 mt-6 bg-white text-gray-800 rounded-lg shadow-md hidden group-hover:block w-40 z-10">
                         <li class="animated-item border-b border-blue-500">
                             <a href="{{ route('expertises.network-design') }}" class="block px-4 py-2 relative z-10 text-gray-800 transition-colors duration-300 ease-in-out hover:text-white">
@@ -224,28 +257,28 @@
                         </li>
                     </ul> --}}
                 </li>
-                <li class="py-6"><a href="{{route('services')}}" class="text-gray-800 hover:text-primary link link--metis font-medium {{$services}}">Prestations & Services</a>
+                <li class="py-6"><a href="{{route('services')}}" class="text-gray-800 text-xl hover:text-primary link link--metis font-medium {{$services}}"> {{__('main/includes/headers.menu-4')}} </a>
 
                 
                 </li>
                 
                 <li class="py-6 relative group">
                     
-                    <a href="" class="text-gray-800 hover:text-primary link link--metis font-medium {{$media}}">Media</a>
+                    <a href="" class="text-gray-800 hover:text-primary text-xl link link--metis font-medium {{$media}}"> {{__('main/includes/headers.menu-5')}} </a>
                     <ul class="absolute left-0 mt-6 bg-white text-gray-800 rounded-lg shadow-md hidden group-hover:block w-40 z-10">
                         <li class="animated-item border-b border-blue-500">
-                            <a href="{{ route('media.news') }}" class="block px-4 py-2 relative z-10 text-gray-800 transition-colors duration-300 ease-in-out hover:text-white">
-                                Actualités 
+                            <a href="{{ route('media.news') }}" class=" text-xl block px-4 py-2 relative z-10 text-gray-800 transition-colors duration-300 ease-in-out hover:text-white">
+                                 {{__('main/includes/headers.sous-menu-5-1')}} 
                             </a>
                         </li>
                         <li class="animated-item border-b border-blue-500">
-                            <a href="{{ route('media.publi-reportages') }}" class="block px-4 py-2 relative z-10 text-gray-800 transition-colors duration-300 ease-in-out hover:text-white">
-                                Publi-reportages
+                            <a href="{{ route('media.publi-reportages') }}" class="text-xl block px-4 py-2 relative z-10 text-gray-800 transition-colors duration-300 ease-in-out hover:text-white">
+                                {{__('main/includes/headers.sous-menu-5-2')}}
                             </a>
                         </li>
                         <li class="animated-item border-b border-blue-500">
-                            <a href="{{ route('media.galerie') }}" class="block px-4 py-2 relative z-10 text-gray-800 transition-colors duration-300 ease-in-out hover:text-white">
-                                Galerie photos
+                            <a href="{{ route('media.galerie') }}" class=" block px-4 py-2 relative z-10 text-gray-800 transition-colors duration-300 ease-in-out hover:text-white">
+                               {{__('main/includes/headers.sous-menu-5-3')}}
                             </a>
                         </li>
                         {{-- <li class="animated-item border-b border-blue-500">
@@ -257,8 +290,8 @@
                 
                 </li>
                 {{-- <li class="py-6"><a href="{{route('news')}}" class="text-gray-800 hover:text-primary link link--metis font-medium {{$news}}">Actualités</a></li> --}}
-                <li class="py-6"><a href="{{route('career')}}" class="text-gray-800 hover:text-primary link link--metis font-medium {{$carriere}}">Carrière</a></li>
-                <li class="py-6"><a href="{{route('contact')}}" class="text-gray-800 hover:text-primary link link--metis font-medium {{$contact}}">Contact</a></li>
+                <li class="py-6"><a href="{{route('career')}}" class="text-gray-800 text-xl hover:text-primary link link--metis font-medium {{$carriere}}"> {{__("main/includes/headers.menu-6")}} </a></li>
+                <li class="py-6"><a href="{{route('contact')}}" class="text-gray-800 text-xl hover:text-primary link link--metis font-medium {{$contact}}"> {{__('main/includes/headers.menu-7')}} </a></li>
             </ul>
         </nav>
         
@@ -324,5 +357,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 });
+window.addEventListener('load', function() {
+    // Cacher le loader
+    const loader = document.getElementById('loader');
+    if (loader) {
+        loader.style.display = 'none'; // On cache le loader
+    }
+});
+
 
 </script>

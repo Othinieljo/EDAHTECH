@@ -126,7 +126,7 @@
   height: 3px;
   width: 100%; /* Ajout de la largeur */
   background: #1b8aee;
-  top: 190%;
+  top: 180%;
   /* top: 100%; */
   left: 0;
   pointer-events: none;
@@ -166,7 +166,7 @@
   height: 3px;
   width: 100%; /* Ajout de la largeur */
   background: #1b8aee;
-  top: 190%;
+  top: 180%;
   left: 0;
   pointer-events: none;
   content: '';

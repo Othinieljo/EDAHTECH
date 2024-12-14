@@ -2,7 +2,7 @@
 
 @section('page-title')
     <title>
-        {{__("main/contents/index.page-title")}}
+      Fibre Optique
     </title>
 
 
@@ -36,7 +36,7 @@
   <!-- Container -->
   <div class="relative container mx-auto px-4 h-full flex items-center">
       <div class="text-center w-full">
-          <h2 class="text-5xl font-extrabold text-white drop-shadow-lg">Fibre Optique</h2>
+          <h2 class="text-5xl font-extrabold text-white drop-shadow-lg">{{__('main/contents/fibre-optique.title')}}</h2>
       </div>
   </div>
 
@@ -63,7 +63,7 @@
                               d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
                           />
                       </svg>
-                      <span class="ms-1.5  font-bold text-lg">Accueil</span>
+                      <span class="ms-1.5  font-bold text-lg">{{__('main/contents/fibre-optique.title-1')}}</span>
                   </a>
               </li>
 
@@ -76,7 +76,7 @@
                       href="#"
                       class="flex h-10 items-center bg-white pe-4 ps-8 text-lg font-bold transition hover:text-yellow-600"
                   >
-                  Fibre Optique
+                  {{__('main/contents/fibre-optique.title-2')}}
                   </a>
               </li>
           </ol>
@@ -100,14 +100,15 @@
               <path fill="#fff" />
             </svg>                     
             <div>
-              <h3 class="mb-1 text-lg font-bold">Planification et conception du réseau</h3>
+              {{-- Planification et conception du réseau --}}
+              <h3 class="mb-1 text-lg font-bold">{{__('main/contents/fibre-optique.card-1')}}</h3>
               {{-- <span class="text-sm text-[#D7BDCA]">1 hour ago</span> --}}
             </div>
           </div>
           {{-- <p class="p-8 m-0 text-[#D7BDCA] line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p> --}}
           <button   class=" relative left-2/4 flex items-center px-8 py-2 my-2 font-bold text-indigo-600 bg-indigo-50 border-b-4 border-indigo-600 rounded-md shadow hover:bg-indigo-50  hover:shadow-md">
             
-            Poursuivre
+            {{__('main/contents/fibre-optique.btn')}}
             <span class="ml-2 text-green-500">→</span>
           
           </button>
@@ -126,14 +127,15 @@
             </svg>                     
            
             <div>
-              <h3 class="mb-1 text-lg font-bold ">Installation et déploiement de la fibre</h3>
+              {{-- Installation et déploiement de la fibre --}}
+              <h3 class="mb-1 text-lg font-bold ">{{__('main/contents/fibre-optique.card-2')}}</h3>
               {{-- <span class="text-sm text-[#D7BDCA]">1 hour ago</span> --}}
             </div>
           </div>
           {{-- <p class="p-8 m-0 text-[#D7BDCA] line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p> --}}
           <button   class=" relative left-2/4 flex items-center px-8 py-2 my-2 font-bold text-indigo-600 bg-indigo-50 border-b-4 border-indigo-600 rounded-md shadow hover:bg-indigo-50  hover:shadow-md">
             
-            Poursuivre
+            {{__('main/contents/fibre-optique.btn')}}
             <span class="ml-2 text-green-500">→</span>
           
           </button>
@@ -150,14 +152,15 @@
             </svg>                     
            
             <div>
-              <h3 class="mb-1 text-lg font-bold ">Splicing (épissure) et connexion</h3>
+              {{-- Splicing (épissure) et connexion --}}
+              <h3 class="mb-1 text-lg font-bold ">{{__('main/contents/fibre-optique.card-3')}}</h3>
               {{-- <span class="text-sm text-[#D7BDCA]">1 hour ago</span> --}}
             </div>
           </div>
           {{-- <p class="p-8 m-0 text-[#D7BDCA] line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p> --}}
           <button   class=" relative left-2/4 flex items-center px-8 py-2 my-2 font-bold text-indigo-600 bg-indigo-50 border-b-4 border-indigo-600 rounded-md shadow hover:bg-indigo-50  hover:shadow-md">
             
-            Poursuivre
+            {{__('main/contents/fibre-optique.btn')}}
             <span class="ml-2 text-green-500">→</span>
           
           </button>
@@ -174,14 +177,15 @@
             </svg>                     
             
             <div>
-              <h3 class="mb-1 text-lg font-bold ">Tests et certification</h3>
+              {{-- Tests et certification --}}
+              <h3 class="mb-1 text-lg font-bold ">{{__('main/contents/fibre-optique.card-4')}}</h3>
               {{-- <span class="text-sm text-[#D7BDCA]">1 hour ago</span> --}}
             </div>
           </div>
           {{-- <p class="p-8 m-0 text-[#D7BDCA] line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p> --}}
           <button   class=" relative left-2/4 flex items-center px-8 py-2 my-2 font-bold text-indigo-600 bg-indigo-50 border-b-4 border-indigo-600 rounded-md shadow hover:bg-indigo-50  hover:shadow-md">
             
-            Poursuivre
+            {{__('main/contents/fibre-optique.btn')}}
             <span class="ml-2 text-green-500">→</span>
           
           </button>
@@ -198,14 +202,15 @@
             </svg>                     
             
             <div>
-              <h3 class="mb-1 text-lg font-bold ">Maintenance et réparation</h3>
+              {{-- Maintenance et réparation --}}
+              <h3 class="mb-1 text-lg font-bold ">{{__('main/contents/fibre-optique.card-5')}}</h3>
               {{-- <span class="text-sm text-[#D7BDCA]">1 hour ago</span> --}}
             </div>
           </div>
           {{-- <p class="p-8 m-0 text-[#D7BDCA] line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p> --}}
           <button   class=" relative left-2/4 flex items-center px-8 py-2 my-2 font-bold text-indigo-600 bg-indigo-50 border-b-4 border-indigo-600 rounded-md shadow hover:bg-indigo-50  hover:shadow-md">
             
-            Poursuivre
+            {{__('main/contents/fibre-optique.btn')}}
             <span class="ml-2 text-green-500">→</span>
           
           </button>
@@ -222,14 +227,15 @@
             </svg>                     
            
             <div>
-              <h3 class="mb-1 text-lg font-bold ">Mise à niveau du réseau</h3>
+              {{-- Mise à niveau du réseau --}}
+              <h3 class="mb-1 text-lg font-bold ">{{__('main/contents/fibre-optique.card-6')}}</h3>
               {{-- <span class="text-sm text-[#D7BDCA]">1 hour ago</span> --}}
             </div>
           </div>
           {{-- <p class="p-8 m-0 text-[#D7BDCA] line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p> --}}
           <button   class=" relative left-2/4 flex items-center px-8 py-2 my-2 font-bold text-indigo-600 bg-indigo-50 border-b-4 border-indigo-600 rounded-md shadow hover:bg-indigo-50  hover:shadow-md">
             
-            Poursuivre
+            {{__('main/contents/fibre-optique.btn')}}
             <span class="ml-2 text-green-500">→</span>
           
           </button>
@@ -250,14 +256,15 @@
             </svg>                     
            
             <div>
-              <h3 class="mb-1 text-lg font-bold ">Gestion de la capacité et optimisation</h3>
+              {{-- Gestion de la capacité et optimisation --}}
+              <h3 class="mb-1 text-lg font-bold ">{{__('main/contents/fibre-optique.card-7')}}</h3>
               {{-- <span class="text-sm text-[#D7BDCA]">1 hour ago</span> --}}
             </div>
           </div>
           {{-- <p class="p-8 m-0 text-[#D7BDCA] line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p> --}}
           <button   class=" relative left-2/4 flex items-center px-8 py-2 my-2 font-bold text-indigo-600 bg-indigo-50 border-b-4 border-indigo-600 rounded-md shadow hover:bg-indigo-50  hover:shadow-md">
             
-            Poursuivre
+            {{__('main/contents/fibre-optique.btn')}}
             <span class="ml-2 text-green-500">→</span>
           
           </button>
@@ -276,14 +283,15 @@
             </svg>                     
            
             <div>
-              <h3 class="mb-1 text-lg font-bold ">Sécurisation du réseau</h3>
+              {{-- Sécurisation du réseau --}}
+              <h3 class="mb-1 text-lg font-bold ">{{__('main/contents/fibre-optique.card-8')}}</h3>
               {{-- <span class="text-sm text-[#D7BDCA]">1 hour ago</span> --}}
             </div>
           </div>
           {{-- <p class="p-8 m-0 text-[#D7BDCA] line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p> --}}
           <button   class=" relative left-2/4 flex items-center px-8 py-2 my-2 font-bold text-indigo-600 bg-indigo-50 border-b-4 border-indigo-600 rounded-md shadow hover:bg-indigo-50  hover:shadow-md">
             
-            Poursuivre
+            {{__('main/contents/fibre-optique.btn')}}
             <span class="ml-2 text-green-500">→</span>
           
           </button>
@@ -302,14 +310,15 @@
             </svg>                     
            
             <div>
-              <h3 class="mb-1 text-lg font-bold ">Formation et développement des compétences</h3>
+              {{-- Formation et développement des compétences --}}
+              <h3 class="mb-1 text-lg font-bold ">{{__('main/contents/fibre-optique.card-9')}}</h3>
               {{-- <span class="text-sm text-[#D7BDCA]">1 hour ago</span> --}}
             </div>
           </div>
           {{-- <p class="p-8 m-0 text-[#D7BDCA] line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p> --}}
           <button   class=" relative left-2/4 flex items-center px-8 py-2 my-2 font-bold text-indigo-600 bg-indigo-50 border-b-4 border-indigo-600 rounded-md shadow hover:bg-indigo-50  hover:shadow-md">
             
-            Poursuivre
+            {{__('main/contents/fibre-optique.btn')}}
             <span class="ml-2 text-green-500">→</span>
           
           </button>
@@ -331,14 +340,15 @@
             </svg>                     
            
             <div>
-              <h3 class="mb-1 text-lg font-bold ">Documentation et conformité</h3>
+              {{-- Documentation et conformité --}}
+              <h3 class="mb-1 text-lg font-bold ">{{__('main/contents/fibre-optique.card-10')}}</h3>
               {{-- <span class="text-sm text-[#D7BDCA]">1 hour ago</span> --}}
             </div>
           </div>
           {{-- <p class="p-8 m-0 text-[#D7BDCA] line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p> --}}
           <button   class=" relative left-2/4 flex items-center px-8 py-2 my-2 font-bold text-indigo-600 bg-indigo-50 border-b-4 border-indigo-600 rounded-md shadow hover:bg-indigo-50  hover:shadow-md">
             
-            Poursuivre
+            {{__('main/contents/fibre-optique.btn')}}
             <span class="ml-2 text-green-500">→</span>
           
           </button>

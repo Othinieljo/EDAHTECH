@@ -11,6 +11,7 @@ return [
 
     'call-2-titre' => "Restez à l'avant-garde de l'innovation !",
     'call-2-text' => "Abonnez-vous à notre newsletter pour recevoir des informations exclusives, des astuces technologiques et les dernières tendances en télécommunications et informatique.",
-    'call-2-btn' => "S'abonner"
+    'call-2-btn' => "S'abonner",
+    'mail-text' => "Entrez votre email"
 
 ];

@@ -2,7 +2,7 @@
 
 @section('page-title')
     <title>
-        {{__("main/contents/index.page-title")}}
+      Network Design & planning (Radio & Transmission)
     </title>
 
 
@@ -36,7 +36,7 @@
   <!-- Container -->
   <div class="relative container mx-auto px-4 h-full flex items-center">
       <div class="text-center w-full">
-          <h2 class="text-5xl font-extrabold text-white drop-shadow-lg">Network Design & planning (Radio & Transmission)</h2>
+          <h2 class="text-5xl font-extrabold text-white drop-shadow-lg"> {{__('main/contents/network-design.title')}} </h2>
       </div>
   </div>
 
@@ -63,7 +63,7 @@
                               d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
                           />
                       </svg>
-                      <span class="ms-1.5  font-bold text-lg">Accueil</span>
+                      <span class="ms-1.5  font-bold text-lg">{{__('main/contents/network-design.title-1')}} </span>
                   </a>
               </li>
 
@@ -76,7 +76,7 @@
                       href="#"
                       class="flex h-10 items-center bg-white pe-4 ps-8 text-lg font-bold transition hover:text-yellow-600"
                   >
-                  Network Design & planning (Radio & Transmission)
+                  {{__('main/contents/network-design.title-2')}} 
                   </a>
               </li>
           </ol>
@@ -94,21 +94,22 @@
   <ul class="grid gap-8 xl:m-32 list-none grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
     <li class="flex">
       <a href="#" class="relative block w-full h-[400px] overflow-hidden text-none rounded-[40px] group">
-        <img src="{{asset('images/expertises/etude.jpeg')}}" class="w-full h-full object-cover" alt="" />
+        <img src="{{asset('images/expertises/study.jpeg')}}" class="w-full h-full object-cover" alt="" />
         <div class="absolute bottom-20 left-0 right-0 z-10 p-0 translate-y-full bg-white rounded-[40px] transition-transform duration-200 ease-in-out group-hover:translate-y-20">
           <div class="relative flex items-center gap-8 p-8 bg-white rounded-t-[40px]">
             <svg class="absolute bottom-full right-0 z-10 w-20 h-20" xmlns="http://www.w3.org/2000/svg">
               <path fill="#fff" />
             </svg>                     
             <div>
-              <h3 class="mb-1 text-lg font-bold">Étude de couverture et de propagation radio</h3>
+              {{-- Étude de couverture et de propagation radio --}}
+              <h3 class="mb-1 text-lg font-bold">{{__('main/contents/network-design.card-1')}} </h3>
               {{-- <span class="text-sm text-[#D7BDCA]">1 hour ago</span> --}}
             </div>
           </div>
           {{-- <p class="p-8 m-0 text-[#D7BDCA] line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p> --}}
           <button   class=" relative left-2/4 flex items-center px-8 py-2 my-2 font-bold text-indigo-600 bg-indigo-50 border-b-4 border-indigo-600 rounded-md shadow hover:bg-indigo-50  hover:shadow-md">
             
-            Poursuivre
+             {{__('main/contents/network-design.btn')}}
             <span class="ml-2 text-green-500">→</span>
           
           </button>
@@ -119,7 +120,7 @@
     </li>
     <li class="flex">
       <a href="#" class="relative block w-full h-[400px] overflow-hidden text-none rounded-[40px] group">
-        <img src="{{asset('images/expertises/conc.jpeg')}}" class="w-full h-full object-cover" alt="" />
+        <img src="{{asset('main/images/services/TE_INSTALLATION.jpg')}}" class="w-full h-full object-cover" alt="" />
         <div class="absolute bottom-20 left-0 right-0 z-10 p-0 translate-y-full bg-white rounded-[40px] transition-transform duration-200 ease-in-out group-hover:translate-y-20">
           <div class="relative flex items-center gap-8 p-8 bg-white rounded-t-[40px]">
             <svg class="absolute bottom-full right-0 z-10 w-20 h-20" xmlns="http://www.w3.org/2000/svg">
@@ -127,14 +128,15 @@
             </svg>                     
            
             <div>
-              <h3 class="mb-1 text-lg font-bold ">Conception de l'architecture réseau</h3>
+              {{-- Conception de l'architecture réseau --}}
+              <h3 class="mb-1 text-lg font-bold ">{{__('main/contents/network-design.card-2')}} </h3>
               {{-- <span class="text-sm text-[#D7BDCA]">1 hour ago</span> --}}
             </div>
           </div>
           {{-- <p class="p-8 m-0 text-[#D7BDCA] line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p> --}}
           <button   class=" relative left-2/4 flex items-center px-8 py-2 my-2 font-bold text-indigo-600 bg-indigo-50 border-b-4 border-indigo-600 rounded-md shadow hover:bg-indigo-50  hover:shadow-md">
             
-            Poursuivre
+             {{__('main/contents/network-design.btn')}}
             <span class="ml-2 text-green-500">→</span>
           
           </button>
@@ -143,7 +145,7 @@
     </li>
     <li class="flex">
       <a href="#" class="relative block w-full h-[400px] overflow-hidden text-none rounded-[40px] group">
-        <img src="{{asset('images/expertises/site2.jpeg')}}" class="w-full h-full object-cover" alt="" />
+        <img src="{{asset('main/images/services/TE_INSTALLATION.jpg')}}" class="w-full h-full object-cover" alt="" />
         <div class="absolute bottom-20 left-0 right-0 z-10 p-0 translate-y-full bg-white rounded-[40px] transition-transform duration-200 ease-in-out group-hover:translate-y-20">
           <div class="relative flex items-center gap-8 p-8 bg-white rounded-t-[40px]">
             <svg class="absolute bottom-full right-0 z-10 w-20 h-20" xmlns="http://www.w3.org/2000/svg">
@@ -151,14 +153,15 @@
             </svg>                     
            
             <div>
-              <h3 class="mb-1 text-lg font-bold ">Sélection et dimensionnement des équipements</h3>
+              {{-- Sélection et dimensionnement des équipements --}}
+              <h3 class="mb-1 text-lg font-bold ">{{__('main/contents/network-design.card-3')}} </h3>
               {{-- <span class="text-sm text-[#D7BDCA]">1 hour ago</span> --}}
             </div>
           </div>
           {{-- <p class="p-8 m-0 text-[#D7BDCA] line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p> --}}
           <button   class=" relative left-2/4 flex items-center px-8 py-2 my-2 font-bold text-indigo-600 bg-indigo-50 border-b-4 border-indigo-600 rounded-md shadow hover:bg-indigo-50  hover:shadow-md">
             
-            Poursuivre
+             {{__('main/contents/network-design.btn')}}
             <span class="ml-2 text-green-500">→</span>
           
           </button>
@@ -167,7 +170,7 @@
     </li>
     <li class="flex">
       <a href="#" class="relative block w-full h-[400px] overflow-hidden text-none rounded-[40px] group">
-        <img src="{{asset('main/images/services/civil-work.jpg')}}" class="w-full h-full object-cover" alt="" />
+        <img src="{{asset('images/expertises/size.jpeg')}}" class="w-full h-full object-cover" alt="" />
         <div class="absolute bottom-20 left-0 right-0 z-10 p-0 translate-y-full bg-white rounded-[40px] transition-transform duration-200 ease-in-out group-hover:translate-y-20">
           <div class="relative flex items-center gap-8 p-8 bg-white rounded-t-[40px]">
             <svg class="absolute bottom-full right-0 z-10 w-20 h-20" xmlns="http://www.w3.org/2000/svg">
@@ -175,14 +178,15 @@
             </svg>                     
             
             <div>
-              <h3 class="mb-1 text-lg font-bold ">Optimisation des performances du réseau</h3>
+              {{-- Optimisation des performances du réseau --}}
+              <h3 class="mb-1 text-lg font-bold ">{{__('main/contents/network-design.card-4')}} </h3>
               {{-- <span class="text-sm text-[#D7BDCA]">1 hour ago</span> --}}
             </div>
           </div>
           {{-- <p class="p-8 m-0 text-[#D7BDCA] line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p> --}}
           <button   class=" relative left-2/4 flex items-center px-8 py-2 my-2 font-bold text-indigo-600 bg-indigo-50 border-b-4 border-indigo-600 rounded-md shadow hover:bg-indigo-50  hover:shadow-md">
             
-            Poursuivre
+             {{__('main/contents/network-design.btn')}}
             <span class="ml-2 text-green-500">→</span>
           
           </button>
@@ -199,14 +203,15 @@
             </svg>                     
             
             <div>
-              <h3 class="mb-1 text-lg font-bold ">Planification des fréquences</h3>
+              {{-- Planification des fréquences --}}
+              <h3 class="mb-1 text-lg font-bold ">{{__('main/contents/network-design.card-5')}} </h3>
               {{-- <span class="text-sm text-[#D7BDCA]">1 hour ago</span> --}}
             </div>
           </div>
           {{-- <p class="p-8 m-0 text-[#D7BDCA] line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p> --}}
           <button   class=" relative left-2/4 flex items-center px-8 py-2 my-2 font-bold text-indigo-600 bg-indigo-50 border-b-4 border-indigo-600 rounded-md shadow hover:bg-indigo-50  hover:shadow-md">
             
-            Poursuivre
+             {{__('main/contents/network-design.btn')}}
             <span class="ml-2 text-green-500">→</span>
           
           </button>
@@ -223,14 +228,15 @@
             </svg>                     
            
             <div>
-              <h3 class="mb-1 text-lg font-bold ">Test et validation du réseau</h3>
+              {{-- Test et validation du réseau --}}
+              <h3 class="mb-1 text-lg font-bold ">{{__('main/contents/network-design.card-6')}} </h3>
               {{-- <span class="text-sm text-[#D7BDCA]">1 hour ago</span> --}}
             </div>
           </div>
           {{-- <p class="p-8 m-0 text-[#D7BDCA] line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p> --}}
           <button   class=" relative left-2/4 flex items-center px-8 py-2 my-2 font-bold text-indigo-600 bg-indigo-50 border-b-4 border-indigo-600 rounded-md shadow hover:bg-indigo-50  hover:shadow-md">
             
-            Poursuivre
+             {{__('main/contents/network-design.btn')}}
             <span class="ml-2 text-green-500">→</span>
           
           </button>
@@ -249,14 +255,15 @@
             </svg>                     
            
             <div>
-              <h3 class="mb-1 text-lg font-bold ">Maintenance et optimisation continue</h3>
+              {{-- Maintenance et optimisation continue --}}
+              <h3 class="mb-1 text-lg font-bold ">{{__('main/contents/network-design.card-7')}} </h3>
               {{-- <span class="text-sm text-[#D7BDCA]">1 hour ago</span> --}}
             </div>
           </div>
           {{-- <p class="p-8 m-0 text-[#D7BDCA] line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p> --}}
           <button   class=" relative left-2/4 flex items-center px-8 py-2 my-2 font-bold text-indigo-600 bg-indigo-50 border-b-4 border-indigo-600 rounded-md shadow hover:bg-indigo-50  hover:shadow-md">
             
-            Poursuivre
+             {{__('main/contents/network-design.btn')}}
             <span class="ml-2 text-green-500">→</span>
           
           </button>
@@ -275,14 +282,15 @@
             </svg>                     
            
             <div>
-              <h3 class="mb-1 text-lg font-bold ">Sécurité du réseau</h3>
+              {{-- Sécurité du réseau --}}
+              <h3 class="mb-1 text-lg font-bold ">{{__('main/contents/network-design.card-8')}} </h3>
               {{-- <span class="text-sm text-[#D7BDCA]">1 hour ago</span> --}}
             </div>
           </div>
           {{-- <p class="p-8 m-0 text-[#D7BDCA] line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p> --}}
           <button   class=" relative left-2/4 flex items-center px-8 py-2 my-2 font-bold text-indigo-600 bg-indigo-50 border-b-4 border-indigo-600 rounded-md shadow hover:bg-indigo-50  hover:shadow-md">
             
-            Poursuivre
+            {{__('main/contents/network-design.btn')}}
             <span class="ml-2 text-green-500">→</span>
           
           </button>
@@ -314,7 +322,7 @@
           <p class="p-8 m-0 text-[#D7BDCA] line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
           <button   class=" relative left-2/4 flex items-center px-8 py-2 my-2 font-bold text-indigo-600 bg-indigo-50 border-b-4 border-indigo-600 rounded-md shadow hover:bg-indigo-50  hover:shadow-md">
             
-            Poursuivre
+             {{__('main/contents/network-design.btn')}}
             <span class="ml-2 text-green-500">→</span>
           
           </button>

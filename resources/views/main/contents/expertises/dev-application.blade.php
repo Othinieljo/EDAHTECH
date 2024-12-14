@@ -2,7 +2,7 @@
 
 @section('page-title')
     <title>
-        {{__("main/contents/index.page-title")}}
+      Développement d’application
     </title>
 
 
@@ -36,7 +36,7 @@
   <!-- Container -->
   <div class="relative container mx-auto px-4 h-full flex items-center">
       <div class="text-center w-full">
-          <h2 class="text-5xl font-extrabold text-white drop-shadow-lg">Développement d’application</h2>
+          <h2 class="text-5xl font-extrabold text-white drop-shadow-lg">{{__('main/contents/dev-application.title')}}</h2>
       </div>
   </div>
 
@@ -63,7 +63,7 @@
                               d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
                           />
                       </svg>
-                      <span class="ms-1.5  font-bold text-lg">Accueil</span>
+                      <span class="ms-1.5  font-bold text-lg">{{__('main/contents/dev-application.title-1')}}</span>
                   </a>
               </li>
 
@@ -76,7 +76,7 @@
                       href="#"
                       class="flex h-10 items-center bg-white pe-4 ps-8 text-lg font-bold transition hover:text-yellow-600"
                   >
-                  Développement d’application
+                  {{__('main/contents/dev-application.title-2')}}
                   </a>
               </li>
           </ol>
@@ -101,14 +101,15 @@
               <path fill="#fff" />
             </svg>                     
             <div>
-              <h3 class="mb-1 text-lg font-bold">Maintenance et mise à jour de l'application</h3>
+              {{-- Maintenance et mise à jour de l'application --}}
+              <h3 class="mb-1 text-lg font-bold">{{__('main/contents/dev-application.card-1')}}</h3>
               {{-- <span class="text-sm text-[#D7BDCA]">1 hour ago</span> --}}
             </div>
           </div>
           {{-- <p class="p-8 m-0 text-[#D7BDCA] line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p> --}}
           <button   class=" relative left-2/4 flex items-center px-8 py-2 my-2 font-bold text-indigo-600 bg-indigo-50 border-b-4 border-indigo-600 rounded-md shadow hover:bg-indigo-50  hover:shadow-md">
             
-            Poursuivre
+            {{__('main/contents/dev-application.btn')}}
             <span class="ml-2 text-green-500">→</span>
           
           </button>
@@ -127,14 +128,15 @@
             </svg>                     
            
             <div>
-              <h3 class="mb-1 text-lg font-bold ">Support utilisateur</h3>
+              {{-- Support utilisateur --}}
+              <h3 class="mb-1 text-lg font-bold ">{{__('main/contents/dev-application.card-2')}}</h3>
               {{-- <span class="text-sm text-[#D7BDCA]">1 hour ago</span> --}}
             </div>
           </div>
           {{-- <p class="p-8 m-0 text-[#D7BDCA] line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p> --}}
           <button   class=" relative left-2/4 flex items-center px-8 py-2 my-2 font-bold text-indigo-600 bg-indigo-50 border-b-4 border-indigo-600 rounded-md shadow hover:bg-indigo-50  hover:shadow-md">
             
-            Poursuivre
+            {{__('main/contents/dev-application.btn')}}
             <span class="ml-2 text-green-500">→</span>
           
           </button>
@@ -151,14 +153,15 @@
             </svg>                     
            
             <div>
-              <h3 class="mb-1 text-lg font-bold ">Marketing et distribution</h3>
+              {{-- Marketing et distribution --}}
+              <h3 class="mb-1 text-lg font-bold ">{{__('main/contents/dev-application.card-3')}}</h3>
               {{-- <span class="text-sm text-[#D7BDCA]">1 hour ago</span> --}}
             </div>
           </div>
           {{-- <p class="p-8 m-0 text-[#D7BDCA] line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p> --}}
           <button   class=" relative left-2/4 flex items-center px-8 py-2 my-2 font-bold text-indigo-600 bg-indigo-50 border-b-4 border-indigo-600 rounded-md shadow hover:bg-indigo-50  hover:shadow-md">
             
-            Poursuivre
+            {{__('main/contents/dev-application.btn')}}
             <span class="ml-2 text-green-500">→</span>
           
           </button>
@@ -175,14 +178,15 @@
             </svg>                     
             
             <div>
-              <h3 class="mb-1 text-lg font-bold ">Analyse de performance</h3>
+              {{-- Analyse de performance --}}
+              <h3 class="mb-1 text-lg font-bold ">{{__('main/contents/dev-application.card-4')}}</h3>
               {{-- <span class="text-sm text-[#D7BDCA]">1 hour ago</span> --}}
             </div>
           </div>
           {{-- <p class="p-8 m-0 text-[#D7BDCA] line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p> --}}
           <button   class=" relative left-2/4 flex items-center px-8 py-2 my-2 font-bold text-indigo-600 bg-indigo-50 border-b-4 border-indigo-600 rounded-md shadow hover:bg-indigo-50  hover:shadow-md">
             
-            Poursuivre
+            {{__('main/contents/dev-application.btn')}}
             <span class="ml-2 text-green-500">→</span>
           
           </button>
@@ -199,14 +203,15 @@
             </svg>                     
             
             <div>
-              <h3 class="mb-1 text-lg font-bold ">Sécurité</h3>
+              {{-- Sécurité --}}
+              <h3 class="mb-1 text-lg font-bold ">{{__('main/contents/dev-application.card-5')}}</h3>
               {{-- <span class="text-sm text-[#D7BDCA]">1 hour ago</span> --}}
             </div>
           </div>
           {{-- <p class="p-8 m-0 text-[#D7BDCA] line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p> --}}
           <button   class=" relative left-2/4 flex items-center px-8 py-2 my-2 font-bold text-indigo-600 bg-indigo-50 border-b-4 border-indigo-600 rounded-md shadow hover:bg-indigo-50  hover:shadow-md">
             
-            Poursuivre
+            {{__('main/contents/dev-application.btn')}}
             <span class="ml-2 text-green-500">→</span>
           
           </button>
@@ -223,14 +228,15 @@
             </svg>                     
            
             <div>
-              <h3 class="mb-1 text-lg font-bold ">Scalabilité</h3>
+              {{-- Scalabilité --}}
+              <h3 class="mb-1 text-lg font-bold ">{{__('main/contents/dev-application.card-6')}}</h3>
               {{-- <span class="text-sm text-[#D7BDCA]">1 hour ago</span> --}}
             </div>
           </div>
           {{-- <p class="p-8 m-0 text-[#D7BDCA] line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p> --}}
           <button   class=" relative left-2/4 flex items-center px-8 py-2 my-2 font-bold text-indigo-600 bg-indigo-50 border-b-4 border-indigo-600 rounded-md shadow hover:bg-indigo-50  hover:shadow-md">
             
-            Poursuivre
+            {{__('main/contents/dev-application.btn')}}
             <span class="ml-2 text-green-500">→</span>
           
           </button>
@@ -262,14 +268,15 @@
             </svg>                     
            
             <div>
-              <h3 class="mb-1 text-lg font-bold ">Développement de fonctionnalités supplémentaires</h3>
+              {{-- Développement de fonctionnalités supplémentaires --}}
+              <h3 class="mb-1 text-lg font-bold ">{{__('main/contents/dev-application.card-7')}}</h3>
               {{-- <span class="text-sm text-[#D7BDCA]">1 hour ago</span> --}}
             </div>
           </div>
           {{-- <p class="p-8 m-0 text-[#D7BDCA] line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p> --}}
           <button   class=" relative left-2/4 flex items-center px-8 py-2 my-2 font-bold text-indigo-600 bg-indigo-50 border-b-4 border-indigo-600 rounded-md shadow hover:bg-indigo-50  hover:shadow-md">
             
-            Poursuivre
+            {{__('main/contents/dev-application.btn')}}
             <span class="ml-2 text-green-500">→</span>
           
           </button>

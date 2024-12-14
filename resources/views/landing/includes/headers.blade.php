@@ -1,9 +1,41 @@
-<header class="w-full py-4 overflow-x-hidden overflow-y-auto ">
-    <div class="container mx-auto flex justify-between items-center px-6 py-4 relative z-10">
-        <!-- Logo -->
-        <div class="text-white font-bold text-xl">
-            <img src="{{asset('logo-white.svg')}}" alt="EDAHTECH">
+<div id="loader" class="bg-[#e8e8e8]">
+
+    <div class="boxes">
+        <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
+        <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+</div>
+
+<header class="w-full py-4  bg-blue-800 absolute ">
+    <div class="container mx-auto flex justify-between items-center px-6 py-4 relative z-10 ">
+        <!-- Logo -->
+        <div class="text-white font-bold text-3xl">
+            <img src="{{asset('logo-white.svg')}}" alt="EDAHTECH" class=" w-96 h-auto" >
+        </div>
+        
         
         <!-- Hamburger Menu for Mobile -->
         <button id="menu-toggle" class="lg:hidden flex items-center text-white focus:outline-none">
@@ -29,8 +61,8 @@
                         @endif
                     </button>
                     <ul class="absolute bg-white text-gray-800 rounded-lg shadow-md mt-1 hidden group-hover:block w-full">
-                        <li><a href="{{ url('/fr') }}" class="block px-4 py-2 hover:bg-gray-100">Français</a></li>
-                        <li><a href="{{ url('/en') }}" class="block px-4 py-2 hover:bg-gray-100">English</a></li>
+                        <li><a href="{{ route('lang.switch', 'fr') }}"  class="block px-4 py-2 hover:bg-gray-100">Français</a></li>
+                        <li><a href="{{ route('lang.switch', 'en') }}"  class="block px-4 py-2 hover:bg-gray-100">English</a></li>
                     </ul>
                 </li>
             </ul>
@@ -43,4 +75,14 @@
         const menu = document.getElementById('menu');
         menu.classList.toggle('hidden');
     });
+    
+    // JavaScript pour cacher le loader après que la page est entièrement chargée
+window.addEventListener('load', function() {
+    // Cacher le loader
+    const loader = document.getElementById('loader');
+    if (loader) {
+        loader.style.display = 'none'; // On cache le loader
+    }
+});
+
 </script>

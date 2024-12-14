@@ -9,5 +9,7 @@ return [
     // Card Call to Action 2
     'call-2-titre' => "Stay at the forefront of innovation!",
     'call-2-text' => "Subscribe to our newsletter to receive exclusive information, tech tips, and the latest trends in telecommunications and IT.",
-    'call-2-btn' => "Subscribe"
+    'call-2-btn' => "Subscribe",
+    'mail-text' => "Enter your email"
+
 ];

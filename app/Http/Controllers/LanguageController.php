@@ -48,5 +48,17 @@ class LanguageController extends Controller
 
     //     return redirect($newUrl);
     // }
+    public function switchLang($lang){
+        
+        if (array_key_exists($lang, Config::get('app.locales'))) {
+            Session::put('locale', $lang);
+            
+            
+        }
+        
+
+        return redirect()->back();
+        
+    }
     
 }

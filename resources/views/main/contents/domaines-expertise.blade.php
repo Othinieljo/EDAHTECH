@@ -36,7 +36,7 @@
     <!-- Container -->
     <div class="relative container mx-auto px-4 h-full flex items-center">
         <div class="text-center w-full">
-            <h2 class="text-5xl font-extrabold text-white drop-shadow-lg">Domaines d'expertises</h2>
+            <h2 class="text-5xl font-extrabold text-white drop-shadow-lg"> {{__('main/contents/domaines-expertise.title')}} </h2>
         </div>
     </div>
   
@@ -63,7 +63,7 @@
                                 d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
                             />
                         </svg>
-                        <span class="ms-1.5  font-bold text-lg">Accueil</span>
+                        <span class="ms-1.5  font-bold text-lg">{{__("main/contents/domaines-expertise.title-1-1")}} </span>
                     </a>
                 </li>
   
@@ -76,7 +76,7 @@
                         href="#"
                         class="flex h-10 items-center bg-white pe-4 ps-8 text-lg font-bold transition hover:text-yellow-600"
                     >
-                    Domaines d'expertises
+                    {{__("main/contents/domaines-expertise.title-1-2")}}
                     </a>
                 </li>
             </ol>

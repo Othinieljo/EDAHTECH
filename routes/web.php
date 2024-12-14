@@ -5,7 +5,8 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ServicesController;
 use App\Http\Controllers\ContactController;
 
-use App\Http\Controllers\LangageController;
+
+use App\Http\Controllers\LanguageController;
 // Route pour changer de langue
 // Route::get('/lang/{locale}', [LanguageController::class, 'setLocale']
 // )->name('change.language');
@@ -14,12 +15,14 @@ use App\Http\Controllers\LangageController;
 use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\Admin\AdminController;
 
-Route::get('lang/{locale}', function ($locale) {
-    if (in_array($locale, ['en', 'fr'])) {
-        session(['locale' => $locale]);
-    }
-    return redirect()->back();
-})->name('change.language');
+// Route::get('lang/{locale}', function ($locale) {
+//     if (in_array($locale, ['en', 'fr'])) {
+//         session(['locale' => $locale]);
+//     }
+//     return redirect()->back();
+// })->name('change.language');
+
+Route::get('lang/{lang}', [LanguageController::class, 'switchLang'])->name('lang.switch');
 
 // Groupe de routes avec localisation
 Route::group(['prefix' => '{locale}', 'where' => ['locale' => 'fr|en'], 'middleware' => 'web'], function () {
@@ -610,3 +613,7 @@ Route::prefix('admin')->group(function () {
     });
 });
 Route::post('/create', [AuthController::class, 'store'])->name('admin.store');
+
+// Route::post('/contacter-edah', ['uses' => 'ContactController@ContacterEDAH', 'as' => 'contactez_nous']);
+
+Route::post('/contacter-edah', [ContactController::class, 'ContacterEDAH'])->name('contactez_nous');

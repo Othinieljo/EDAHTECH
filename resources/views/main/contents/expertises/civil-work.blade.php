@@ -2,7 +2,7 @@
 
 @section('page-title')
     <title>
-        {{__("main/contents/index.page-title")}}
+      Civil Work et Data Center
     </title>
 
 
@@ -36,7 +36,7 @@
   <!-- Container -->
   <div class="relative container mx-auto px-4 h-full flex items-center">
       <div class="text-center w-full">
-          <h2 class="text-5xl font-extrabold text-white drop-shadow-lg">Civil Work et Data Center</h2>
+          <h2 class="text-5xl font-extrabold text-white drop-shadow-lg">{{__('main/contents/civil-work.title')}}</h2>
       </div>
   </div>
 
@@ -63,7 +63,7 @@
                               d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
                           />
                       </svg>
-                      <span class="ms-1.5  font-bold text-lg">Accueil</span>
+                      <span class="ms-1.5  font-bold text-lg">{{__('main/contents/civil-work.title-1')}}</span>
                   </a>
               </li>
 
@@ -76,7 +76,7 @@
                       href="#"
                       class="flex h-10 items-center bg-white pe-4 ps-8 text-lg font-bold transition hover:text-yellow-600"
                   >
-                  Civil Work et Data Center
+                  {{__('main/contents/civil-work.title-2')}}
                   </a>
               </li>
           </ol>
@@ -101,14 +101,15 @@
               <path fill="#fff" />
             </svg>                     
             <div>
-              <h3 class="mb-1 text-lg font-bold">Étude et planification</h3>
+              {{-- Étude et planification --}}
+              <h3 class="mb-1 text-lg font-bold">{{__('main/contents/civil-work.card-1')}}</h3>
               {{-- <span class="text-sm text-[#D7BDCA]">1 hour ago</span> --}}
             </div>
           </div>
           {{-- <p class="p-8 m-0 text-[#D7BDCA] line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p> --}}
           <button   class=" relative left-2/4 flex items-center px-8 py-2 my-2 font-bold text-indigo-600 bg-indigo-50 border-b-4 border-indigo-600 rounded-md shadow hover:bg-indigo-50  hover:shadow-md">
             
-            Poursuivre
+            {{__('main/contents/civil-work.btn')}}
             <span class="ml-2 text-green-500">→</span>
           
           </button>
@@ -127,14 +128,15 @@
             </svg>                     
            
             <div>
-              <h3 class="mb-1 text-lg font-bold ">Acquisition des terrains et permis</h3>
+              {{-- Acquisition des terrains et permis --}}
+              <h3 class="mb-1 text-lg font-bold ">{{__('main/contents/civil-work.card-2')}}</h3>
               {{-- <span class="text-sm text-[#D7BDCA]">1 hour ago</span> --}}
             </div>
           </div>
           {{-- <p class="p-8 m-0 text-[#D7BDCA] line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p> --}}
           <button   class=" relative left-2/4 flex items-center px-8 py-2 my-2 font-bold text-indigo-600 bg-indigo-50 border-b-4 border-indigo-600 rounded-md shadow hover:bg-indigo-50  hover:shadow-md">
             
-            Poursuivre
+            {{__('main/contents/civil-work.btn')}}
             <span class="ml-2 text-green-500">→</span>
           
           </button>
@@ -143,7 +145,7 @@
     </li>
     <li class="flex">
       <a href="#" class="relative block w-full h-[400px] overflow-hidden text-none rounded-[40px] group">
-        <img src="{{asset('images/expertises/site2.jpeg')}}" class="w-full h-full object-cover" alt="" />
+        <img src="{{asset('images/expertises/fo2.webp')}}" class="w-full h-full object-cover" alt="" />
         <div class="absolute bottom-20 left-0 right-0 z-10 p-0 translate-y-full bg-white rounded-[40px] transition-transform duration-200 ease-in-out group-hover:translate-y-20">
           <div class="relative flex items-center gap-8 p-8 bg-white rounded-t-[40px]">
             <svg class="absolute bottom-full right-0 z-10 w-20 h-20" xmlns="http://www.w3.org/2000/svg">
@@ -151,14 +153,15 @@
             </svg>                     
            
             <div>
-              <h3 class="mb-1 text-lg font-bold ">Construction</h3>
+              {{-- Construction --}}
+              <h3 class="mb-1 text-lg font-bold ">{{__('main/contents/civil-work.card-3')}}</h3>
               {{-- <span class="text-sm text-[#D7BDCA]">1 hour ago</span> --}}
             </div>
           </div>
           {{-- <p class="p-8 m-0 text-[#D7BDCA] line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p> --}}
           <button   class=" relative left-2/4 flex items-center px-8 py-2 my-2 font-bold text-indigo-600 bg-indigo-50 border-b-4 border-indigo-600 rounded-md shadow hover:bg-indigo-50  hover:shadow-md">
             
-            Poursuivre
+            {{__('main/contents/civil-work.btn')}}
             <span class="ml-2 text-green-500">→</span>
           
           </button>
@@ -175,14 +178,15 @@
             </svg>                     
             
             <div>
-              <h3 class="mb-1 text-lg font-bold ">Installation des infrastructures de support</h3>
+              {{-- Installation des infrastructures de support --}}
+              <h3 class="mb-1 text-lg font-bold ">{{__('main/contents/civil-work.card-4')}}</h3>
               {{-- <span class="text-sm text-[#D7BDCA]">1 hour ago</span> --}}
             </div>
           </div>
           {{-- <p class="p-8 m-0 text-[#D7BDCA] line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p> --}}
           <button   class=" relative left-2/4 flex items-center px-8 py-2 my-2 font-bold text-indigo-600 bg-indigo-50 border-b-4 border-indigo-600 rounded-md shadow hover:bg-indigo-50  hover:shadow-md">
             
-            Poursuivre
+            {{__('main/contents/civil-work.btn')}}
             <span class="ml-2 text-green-500">→</span>
           
           </button>
@@ -199,14 +203,15 @@
             </svg>                     
             
             <div>
-              <h3 class="mb-1 text-lg font-bold ">Inspections et validation</h3>
+              {{-- Inspections et validation --}}
+              <h3 class="mb-1 text-lg font-bold ">{{__('main/contents/civil-work.card-xx')}}</h3>
               {{-- <span class="text-sm text-[#D7BDCA]">1 hour ago</span> --}}
             </div>
           </div>
           {{-- <p class="p-8 m-0 text-[#D7BDCA] line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p> --}}
           <button   class=" relative left-2/4 flex items-center px-8 py-2 my-2 font-bold text-indigo-600 bg-indigo-50 border-b-4 border-indigo-600 rounded-md shadow hover:bg-indigo-50  hover:shadow-md">
             
-            Poursuivre
+            {{__('main/contents/civil-work.btn')}}
             <span class="ml-2 text-green-500">→</span>
           
           </button>
@@ -223,14 +228,15 @@
             </svg>                     
            
             <div>
-              <h3 class="mb-1 text-lg font-bold ">Maintenance et gestion</h3>
+              {{-- Maintenance et gestion --}}
+              <h3 class="mb-1 text-lg font-bold ">{{__('main/contents/civil-work.card-5')}}</h3>
               {{-- <span class="text-sm text-[#D7BDCA]">1 hour ago</span> --}}
             </div>
           </div>
           {{-- <p class="p-8 m-0 text-[#D7BDCA] line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p> --}}
           <button   class=" relative left-2/4 flex items-center px-8 py-2 my-2 font-bold text-indigo-600 bg-indigo-50 border-b-4 border-indigo-600 rounded-md shadow hover:bg-indigo-50  hover:shadow-md">
             
-            Poursuivre
+            {{__('main/contents/civil-work.btn')}}
             <span class="ml-2 text-green-500">→</span>
           
           </button>
@@ -249,14 +255,15 @@
             </svg>                     
            
             <div>
-              <h3 class="mb-1 text-lg font-bold ">Conception et planification</h3>
+              {{-- Conception et planification --}}
+              <h3 class="mb-1 text-lg font-bold ">{{__('main/contents/civil-work.card-6')}}</h3>
               {{-- <span class="text-sm text-[#D7BDCA]">1 hour ago</span> --}}
             </div>
           </div>
           {{-- <p class="p-8 m-0 text-[#D7BDCA] line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p> --}}
           <button   class=" relative left-2/4 flex items-center px-8 py-2 my-2 font-bold text-indigo-600 bg-indigo-50 border-b-4 border-indigo-600 rounded-md shadow hover:bg-indigo-50  hover:shadow-md">
             
-            Poursuivre
+            {{__('main/contents/civil-work.btn')}}
             <span class="ml-2 text-green-500">→</span>
           
           </button>
@@ -275,14 +282,15 @@
             </svg>                     
            
             <div>
-              <h3 class="mb-1 text-lg font-bold ">Construction du Data Center</h3>
+              {{-- Construction du Data Center --}}
+              <h3 class="mb-1 text-lg font-bold ">{{__('main/contents/civil-work.card-7')}}</h3>
               {{-- <span class="text-sm text-[#D7BDCA]">1 hour ago</span> --}}
             </div>
           </div>
           {{-- <p class="p-8 m-0 text-[#D7BDCA] line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p> --}}
           <button   class=" relative left-2/4 flex items-center px-8 py-2 my-2 font-bold text-indigo-600 bg-indigo-50 border-b-4 border-indigo-600 rounded-md shadow hover:bg-indigo-50  hover:shadow-md">
             
-            Poursuivre
+            {{__('main/contents/civil-work.btn')}}
             <span class="ml-2 text-green-500">→</span>
           
           </button>
@@ -301,14 +309,15 @@
             </svg>                     
            
             <div>
-              <h3 class="mb-1 text-lg font-bold ">Installation des équipements informatiques</h3>
+              {{-- Installation des équipements informatiques --}}
+              <h3 class="mb-1 text-lg font-bold ">{{__('main/contents/civil-work.card-8')}}</h3>
               {{-- <span class="text-sm text-[#D7BDCA]">1 hour ago</span> --}}
             </div>
           </div>
           {{-- <p class="p-8 m-0 text-[#D7BDCA] line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p> --}}
           <button   class=" relative left-2/4 flex items-center px-8 py-2 my-2 font-bold text-indigo-600 bg-indigo-50 border-b-4 border-indigo-600 rounded-md shadow hover:bg-indigo-50  hover:shadow-md">
             
-            Poursuivre
+            {{__('main/contents/civil-work.btn')}}
             <span class="ml-2 text-green-500">→</span>
           
           </button>
@@ -326,14 +335,15 @@
             </svg>                     
            
             <div>
-              <h3 class="mb-1 text-lg font-bold ">Gestion de l'énergie et du refroidissement</h3>
+              {{-- Gestion de l'énergie et du refroidissement --}}
+              <h3 class="mb-1 text-lg font-bold ">{{__('main/contents/civil-work.card-9')}}</h3>
               {{-- <span class="text-sm text-[#D7BDCA]">1 hour ago</span> --}}
             </div>
           </div>
           {{-- <p class="p-8 m-0 text-[#D7BDCA] line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p> --}}
           <button   class=" relative left-2/4 flex items-center px-8 py-2 my-2 font-bold text-indigo-600 bg-indigo-50 border-b-4 border-indigo-600 rounded-md shadow hover:bg-indigo-50  hover:shadow-md">
             
-            Poursuivre
+            {{__('main/contents/civil-work.btn')}}
             <span class="ml-2 text-green-500">→</span>
           
           </button>
@@ -351,14 +361,15 @@
             </svg>                     
            
             <div>
-              <h3 class="mb-1 text-lg font-bold ">Sécurité et conformité</h3>
+              {{-- Sécurité et conformité --}}
+              <h3 class="mb-1 text-lg font-bold ">{{__('main/contents/civil-work.card-10')}}</h3>
               {{-- <span class="text-sm text-[#D7BDCA]">1 hour ago</span> --}}
             </div>
           </div>
           {{-- <p class="p-8 m-0 text-[#D7BDCA] line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p> --}}
           <button   class=" relative left-2/4 flex items-center px-8 py-2 my-2 font-bold text-indigo-600 bg-indigo-50 border-b-4 border-indigo-600 rounded-md shadow hover:bg-indigo-50  hover:shadow-md">
             
-            Poursuivre
+            {{__('main/contents/civil-work.btn')}}
             <span class="ml-2 text-green-500">→</span>
           
           </button>
@@ -376,14 +387,15 @@
             </svg>                     
            
             <div>
-              <h3 class="mb-1 text-lg font-bold ">Maintenance et opérations</h3>
+              {{-- Maintenance et opérations --}}
+              <h3 class="mb-1 text-lg font-bold ">{{__('main/contents/civil-work.card-11')}}</h3>
               {{-- <span class="text-sm text-[#D7BDCA]">1 hour ago</span> --}}
             </div>
           </div>
           {{-- <p class="p-8 m-0 text-[#D7BDCA] line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p> --}}
           <button   class=" relative left-2/4 flex items-center px-8 py-2 my-2 font-bold text-indigo-600 bg-indigo-50 border-b-4 border-indigo-600 rounded-md shadow hover:bg-indigo-50  hover:shadow-md">
             
-            Poursuivre
+            {{__('main/contents/civil-work.btn')}}
             <span class="ml-2 text-green-500">→</span>
           
           </button>
@@ -412,7 +424,7 @@
           <p class="p-8 m-0 text-[#D7BDCA] line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
           <button   class=" relative left-2/4 flex items-center px-8 py-2 my-2 font-bold text-indigo-600 bg-indigo-50 border-b-4 border-indigo-600 rounded-md shadow hover:bg-indigo-50  hover:shadow-md">
             
-            Poursuivre
+            {{__('main/contents/civil-work.btn')}}
             <span class="ml-2 text-green-500">→</span>
           
           </button>

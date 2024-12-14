@@ -22,9 +22,9 @@
         <img class="object-cover w-full h-64" src="{{ asset('images/vision.jpg') }}" alt="Flower and sky" />
       </div>
       <div class="flex-1 px-6 py-4">
-        <h4 class="mb-3 text-2xl font-extrabold tracking-tight text-primary">VISION</h4>
+        <h4 class="mb-3 text-2xl font-extrabold tracking-tight text-primary"> {{__('main/includes/vision.title-1')}} </h4>
         <p class="leading-normal text-gray-700">
-          Créer un monde où l'innovation technologique favorise le bien-être des individus, tout en préservant notre planète.
+          {{__('main/includes/vision.text-1')}}
         </p>
       </div>
     </div>
@@ -32,9 +32,9 @@
     <!-- Card 2 -->
     <div class="w-full max-w-4xl overflow-hidden rounded-lg shadow-lg sm:flex">
         <div class="flex-1 px-6 py-4">
-            <h4 class="mb-3 text-2xl font-extrabold tracking-tight text-primary">MISSION</h4>
+            <h4 class="mb-3 text-2xl font-extrabold tracking-tight text-primary"> {{__('main/includes/vision.title-2')}} </h4>
             <p class="leading-normal text-gray-700">
-              Participer à la transformation du monde en développant des solutions technologiques novatrices qui facilitent le quotidien des citoyens, améliorent les processus d'entreprise et encouragent l'innovation, tout en respectant les normes strictes d'éthique, de durabilité et d'inclusivité.
+              {{__('main/includes/vision.text-2')}}
             </p>
           </div>
       <div class="w-full sm:w-1/2">

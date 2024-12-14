@@ -93,7 +93,7 @@
           class="inline-flex items-center gap-2 rounded-full border border-white bg-white px-8 py-3 text-primary hover:bg-transparent hover:text-white focus:outline-none focus:ring active:bg-white/90"
           href="#"
         >
-          <span class="text-sm font-medium">Nous contacter</span>
+          <span class="text-sm font-medium"> {{__('main/includes/footer.btn-contact')}} </span>
   
           <svg
             class="size-5 rtl:rotate-180"
@@ -114,7 +114,7 @@
   
       <div class="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
         <div class="text-center sm:text-left">
-          <p class="text-lg font-bold text-gray-900">Nous connaitre</p>
+          <p class="text-lg font-bold text-gray-900"> {{__('main/includes/footer.menu-1')}} </p>
   
           <ul class="mt-8 space-y-4 text-sm">
             <li>
@@ -123,7 +123,7 @@
                 href="{{ route('about.history') }}"
               >
                 <span class="absolute inset-0 transition-transform scale-x-0 bg-primary opacity-20 group-hover:scale-x-100 transform origin-left"></span>
-                <span class="relative">EDAHTECH</span>
+                <span class="relative"> {{__('main/includes/footer.menu-2')}} </span>
               </a>
             </li>
             <li>
@@ -132,7 +132,7 @@
                 href="{{ route('about.team') }}"
               >
                 <span class="absolute inset-0 transition-transform scale-x-0 bg-primary opacity-20 group-hover:scale-x-100 transform origin-left"></span>
-                <span class="relative">Equipe</span>
+                <span class="relative"> {{__('main/includes/footer.menu-3')}} </span>
               </a>
             </li>
             <li>
@@ -141,7 +141,7 @@
                 href="{{ route('about.vision') }}"
               >
                 <span class="absolute inset-0 transition-transform scale-x-0 bg-primary opacity-20 group-hover:scale-x-100 transform origin-left"></span>
-                <span class="relative">Mission et Vision</span>
+                <span class="relative"> {{__('main/includes/footer.menu-4')}} </span>
               </a>
             </li>
             <li>
@@ -150,14 +150,14 @@
                 href="{{ route('about.values') }}"
               >
                 <span class="absolute inset-0 transition-transform scale-x-0 bg-primary opacity-20 group-hover:scale-x-100 transform origin-left"></span>
-                <span class="relative">Nos valeurs</span>
+                <span class="relative"> {{__('main/includes/footer.menu-5')}} </span>
               </a>
             </li>
           </ul>
         </div>
   
         <div class="text-center sm:text-left">
-          <p class="text-lg font-bold text-gray-900">Page</p>
+          <p class="text-lg font-bold text-gray-900"> {{__('main/includes/footer.menu-6')}} </p>
   
           <ul class="mt-8 space-y-4 text-sm">
             <li>
@@ -166,7 +166,7 @@
                 href="{{ route('expertise') }}"
               >
                 <span class="absolute inset-0 transition-transform scale-x-0 bg-primary opacity-20 group-hover:scale-x-100 transform origin-left"></span>
-                <span class="relative">Nos domaines d'expertises</span>
+                <span class="relative">{{__('main/includes/footer.menu-7')}} </span>
               </a>
             </li>
             
@@ -177,7 +177,7 @@
                 href="{{ route('services') }}"
               >
                 <span class="absolute inset-0 transition-transform scale-x-0 bg-primary opacity-20 group-hover:scale-x-100 transform origin-left"></span>
-                <span class="relative">Prestations & Services</span>
+                <span class="relative"> {{__('main/includes/footer.menu-8')}} </span>
               </a>
             </li>
             <li>
@@ -186,7 +186,7 @@
                 href="{{ route('contact') }}"
               >
                 <span class="absolute inset-0 transition-transform scale-x-0 bg-primary opacity-20 group-hover:scale-x-100 transform origin-left"></span>
-                <span class="relative">Contact</span>
+                <span class="relative"> {{__('main/includes/footer.menu-9')}} </span>
               </a>
             </li>
             <li>
@@ -195,35 +195,35 @@
                 href="{{ route('career') }}"
               >
                 <span class="absolute inset-0 transition-transform scale-x-0 bg-primary opacity-20 group-hover:scale-x-100 transform origin-left"></span>
-                <span class="relative">Carrière</span>
+                <span class="relative"> {{__('main/includes/footer.menu-10')}} </span>
               </a>
             </li>
           </ul>
         </div>
   
         <div class="text-center sm:text-left md:col-span-4 lg:col-span-2">
-          <p class="text-lg font-bold text-gray-900">Newsletter</p>
+          <p class="text-lg font-bold text-gray-900"> {{__('main/includes/footer.news-title')}} </p>
   
           <div class="mx-auto mt-8 max-w-md sm:ms-0">
             <p class="text-center leading-relaxed text-gray-500 ltr:sm:text-left rtl:sm:text-right">
-              Restez à l'avant-garde de l'innovation !
+               {{__('main/includes/footer.news-text')}}
             </p>
   
             <form class="mt-6">
               <div class="relative max-w-lg">
-                <label class="sr-only" for="email"> Email </label>
+                <label class="sr-only" for="email"> {{__('main/includes/footer.news-text')}} </label>
       
                 <input
                   class="w-full rounded-full border-gray-200 bg-gray-100 p-4 pe-32 text-sm font-medium"
                   id="email"
                   type="email"
-                  placeholder="Entrez votre email"
+                  placeholder=" {{__('main/includes/footer.news-place')}} "
                 />
       
                 <button
                   class="absolute end-1 top-1/2 -translate-y-1/2 rounded-full bg-blue-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-blue-700"
                 >
-                S'abonner
+                {{__('main/includes/footer.news-btn')}}
                 </button>
               </div>
             </form>

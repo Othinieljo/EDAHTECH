@@ -10,10 +10,10 @@
         <div class="w-full md:w-1/3 px-4">
             <div class="bg-white p-6 shadow-md rounded-lg">
                 <div class="relative overflow-hidden rounded-full w-32 h-32 mx-auto mb-4 shadow-lg transition-all duration-300 hover:scale-105">
-                    <a href="{{ asset('images/equipe/dg.jpeg') }}" class="absolute inset-0 flex items-center justify-center bg-gray-800 bg-opacity-0 hover:bg-opacity-70 transition-all duration-300">
+                    <a href="{{ asset('images/equipe/dg2.jpeg') }}" class="absolute inset-0 flex items-center justify-center bg-gray-800 bg-opacity-0 hover:bg-opacity-70 transition-all duration-300">
                       <i class="text-white text-2xl fas fa-external-link-alt opacity-0 hover:opacity-100 transition-opacity duration-300"></i>
                     </a>
-                    <img src="{{ asset('images/equipe/dg.jpeg') }}" alt="Profile Picture" class="rounded-full w-full h-full object-cover">
+                    <img src="{{ asset('images/equipe/dg3.jpeg') }}" alt="Profile Picture" class="rounded-full w-full h-full object-cover left-9">
                   </div>
                   
               <h3 class="text-xl font-semibold">M.KOHOU Zon Seraphin</h3>

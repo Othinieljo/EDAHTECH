@@ -1,15 +1,28 @@
 <section style="height: 100vh; position: relsative; overflow: hidden; background-size: cover;" class="overflow-hidden">
-  <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+  <div class="absolute inset-0  bg-opacity-50"></div>
 
   <!-- Background Video -->
-  <video autoplay muted loop class="w-full h-full object-cover absolute top-0 left-0">
+  <video autoplay muted loop class="w-full h-full object-cover absolute top-0 left-0 max-lg:hidden" >
     <source src="{{asset('landing/assets/videos/edah2.mp4')}}" type="video/mp4">
   </video>
+  
+    <img
+      alt="EDAHTECH - Societe de Service Telecom Cote d'Ivoire"
+      src="{{asset('images/values/innovation.jpg')}}"
+      class="w-full h-full object-cover "
+    />
+  
 
   <!-- Title -->
-  <h1 class="absolute top-1/3 left-1/2 lg:left-2/4 transform -translate-x-1/2 -translate-y-1/3 text-yellow-500 font-extrabold text-5xl md:text-7xl px-4">
+  <h1 class="hidden lg:block absolute top-1/3 left-1/2 lg:left-2/4  transform -translate-x-1/2 -translate-y-1/3 text-yellow-500 font-extrabold text-5xl md:text-7xl px-4">
     LET'S <br>
     THINK <br>
+    TO CHANGE THE WORLD
+  </h1>
+
+  <h1 class=" absolute top-1/3  text-center -translate-y-1/3 text-yellow-500 font-extrabold text-3xl md:text-7xl px-4 lg:hidden">
+    LET'S
+    THINK 
     TO CHANGE THE WORLD
   </h1>
 
@@ -45,7 +58,7 @@
     <!-- New Animated Button -->
     <button class="animated-button text-black">
       <a href="{{route('expertise')}}">
-      Explorez nos domaines d'expertises
+      {{ __('landing/includes/heroes.button-expertises')}}
     </a>
     </button>
   </div>

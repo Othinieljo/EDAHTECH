@@ -51,20 +51,18 @@
   
           <div class="p-8 sm:p-16 lg:p-24">
             <h2 class="text-3xl font-extrabold text-gray-800 sm:text-4xl">
-              NOUS CONNAITRE
+              {{__('main/includes/about-us.title')}}
             </h2>
   
             <p class="mt-4 text-gray-600">
-              EDAHTECH est une société de droit ivoirien inscrite au registre du commerce et du crédit mobilier sous le numéro CI-ABJ-2019-M-12497 et spécialisée 
-              dans le domaine des Services Télécom et Informatique. 
-              Elle a été fondée le 20 Avril 2017 sous l’initiative de son actuel Gérant M. KOHOU Zon Séraphin, Ingénieur Electronique, diplômé de l’INP-HB. (...)
+             {{__('main/includes/about-us.text')}}
             </p>
   
             <a
               href="{{route('about.history')}}"
               class="mt-8 inline-block rounded-lg border border-primary bg-primary px-12 py-3 text-sm font-medium text-white shadow hover:bg-transparent hover:text-primary focus:outline-none focus:ring focus:ring-primary/50 active:bg-primary/90"
             >
-              En savoir plus
+             {{__('main/includes/about-us.button')}}
             </a>
           </div>
         </div>

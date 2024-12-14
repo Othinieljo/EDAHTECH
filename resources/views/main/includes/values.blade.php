@@ -60,22 +60,22 @@
                 <!-- Content Section -->
                 <div class="p-6">
                     <h5 class="block mb-2 font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900">
-                        Intégrité
+                        {{__('main/includes/values.card-1-title')}}
                     </h5>
         
                     <!-- List of Values -->
                     <ul class="relative mt-6 border-l-2 border-blue-600">
                         <li class="mb-6 ml-4">
                             <div class="absolute w-4 h-4 -left-2 bg-blue-600 border-2 border-white rounded-full"></div>
-                            <h4 class="font-semibold text-gray-800">Franchise vis-à-vis de nos interlocuteurs.</h4>
+                            <h4 class="font-semibold text-gray-800"> {{__('main/includes/values.card-1-1')}} </h4>
                         </li>
                         <li class="mb-6 ml-4">
                             <div class="absolute w-4 h-4 -left-2 bg-blue-600 border-2 border-white rounded-full"></div>
-                            <h4 class="font-semibold text-gray-800">Strict respect de nos engagements.</h4>
+                            <h4 class="font-semibold text-gray-800"> {{__('main/includes/values.card-1-2')}} </h4>
                         </li>
                         <li class="mb-6 ml-4">
                             <div class="absolute w-4 h-4 -left-2 bg-blue-600 border-2 border-white rounded-full"></div>
-                            <h4 class="font-semibold text-gray-800">Construction de partenariats de long terme dans la bonne foi.</h4>
+                            <h4 class="font-semibold text-gray-800"> {{__('main/includes/values.card-1-3')}} </h4>
                         </li>
                     </ul>
                 </div>
@@ -110,22 +110,22 @@
                 <!-- Content Section -->
                 <div class="p-6">
                     <h5 class="block mb-2 font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900">
-                        Dynamisme
+                         {{__('main/includes/values.card-2-title')}}
                     </h5>
         
                     <!-- List of Values -->
                     <ul class="relative mt-6 border-l-2 border-blue-600">
                         <li class="mb-6 ml-4">
                             <div class="absolute w-4 h-4 -left-2 bg-blue-600 border-2 border-white rounded-full"></div>
-                            <h4 class="font-semibold text-gray-800">Proactivité dans la satisfaction des besoins de nos clients.</h4>
+                            <h4 class="font-semibold text-gray-800">{{__('main/includes/values.card-2-1')}} </h4>
                         </li>
                         <li class="mb-6 ml-4">
                             <div class="absolute w-4 h-4 -left-2 bg-blue-600 border-2 border-white rounded-full"></div>
-                            <h4 class="font-semibold text-gray-800">Équipe motivée, agissant avec énergie.</h4>
+                            <h4 class="font-semibold text-gray-800"> {{__('main/includes/values.card-2-2')}} </h4>
                         </li>
                         <li class="mb-6 ml-4">
                             <div class="absolute w-4 h-4 -left-2 bg-blue-600 border-2 border-white rounded-full"></div>
-                            <h4 class="font-semibold text-gray-800">Polyvalence dans notre cœur de métier.</h4>
+                            <h4 class="font-semibold text-gray-800"> {{__('main/includes/values.card-2-3')}} </h4>
                         </li>
                     </ul>
                 </div>
@@ -160,22 +160,22 @@
             <!-- Content Section -->
             <div class="p-6">
                 <h5 class="block mb-2 font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900">
-                    Leadership
+                     {{__('main/includes/values.card-3-title')}}
                 </h5>
     
                 <!-- List of Values -->
                 <ul class="relative mt-6 border-l-2 border-blue-600">
                     <li class="mb-6 ml-4">
                         <div class="absolute w-4 h-4 -left-2 bg-blue-600 border-2 border-white rounded-full"></div>
-                        <h4 class="font-semibold text-gray-800">Partage de notre vision.</h4>
+                        <h4 class="font-semibold text-gray-800">{{__('main/includes/values.card-3-1')}} </h4>
                     </li>
                     <li class="mb-6 ml-4">
                         <div class="absolute w-4 h-4 -left-2 bg-blue-600 border-2 border-white rounded-full"></div>
-                        <h4 class="font-semibold text-gray-800">Motivation et inspiration de nos partenaires.</h4>
+                        <h4 class="font-semibold text-gray-800"> {{__('main/includes/values.card-3-2')}} </h4>
                     </li>
                     <li class="mb-6 ml-4">
                         <div class="absolute w-4 h-4 -left-2 bg-blue-600 border-2 border-white rounded-full"></div>
-                        <h4 class="font-semibold text-gray-800">Prendre et assurer des responsabilités.</h4>
+                        <h4 class="font-semibold text-gray-800"> {{__('main/includes/values.card-3-3')}} </h4>
                     </li>
                 </ul>
             </div>
@@ -210,22 +210,22 @@
             <!-- Content Section -->
             <div class="p-6">
                 <h5 class="block mb-2 font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900">
-                    Innovation
+                    {{__('main/includes/values.card-4-title')}}
                 </h5>
     
                 <!-- List of Values -->
                 <ul class="relative mt-6 border-l-2 border-blue-600">
                     <li class="mb-6 ml-4">
                         <div class="absolute w-4 h-4 -left-2 bg-blue-600 border-2 border-white rounded-full"></div>
-                        <h4 class="font-semibold text-gray-800">Avant-gardiste des technologies de l'Information et de la Communication.</h4>
+                        <h4 class="font-semibold text-gray-800">{{__('main/includes/values.card-4-1')}} </h4>
                     </li>
                     <li class="mb-6 ml-4">
                         <div class="absolute w-4 h-4 -left-2 bg-blue-600 border-2 border-white rounded-full"></div>
-                        <h4 class="font-semibold text-gray-800">Amélioration constante de nos solutions et pratiques.</h4>
+                        <h4 class="font-semibold text-gray-800"> {{__('main/includes/values.card-4-2')}} </h4>
                     </li>
                     <li class="mb-6 ml-4">
                         <div class="absolute w-4 h-4 -left-2 bg-blue-600 border-2 border-white rounded-full"></div>
-                        <h4 class="font-semibold text-gray-800">Mise en œuvre de nouvelles idées pour la recherche permanente de solutions aux problèmes complexes.</h4>
+                        <h4 class="font-semibold text-gray-800"> {{__('main/includes/values.card-4-3')}} </h4>
                     </li>
                 </ul>
             </div>
@@ -261,22 +261,22 @@
             <!-- Content Section -->
             <div class="p-6">
                 <h5 class="block mb-2 font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900">
-                    Fiabilité
+                    {{__('main/includes/values.card-5-title')}}
                 </h5>
     
                 <!-- List of Values -->
                 <ul class="relative mt-6 border-l-2 border-blue-600">
                     <li class="mb-6 ml-4">
                         <div class="absolute w-4 h-4 -left-2 bg-blue-600 border-2 border-white rounded-full"></div>
-                        <h4 class="font-semibold text-gray-800">Culture de solutions applicables.</h4>
+                        <h4 class="font-semibold text-gray-800"> {{__('main/includes/values.card-5-1')}} </h4>
                     </li>
                     <li class="mb-6 ml-4">
                         <div class="absolute w-4 h-4 -left-2 bg-blue-600 border-2 border-white rounded-full"></div>
-                        <h4 class="font-semibold text-gray-800">Conformité aux cahiers des charges et satisfaction du client.</h4>
+                        <h4 class="font-semibold text-gray-800"> {{__('main/includes/values.card-5-2')}} </h4>
                     </li>
                     <li class="mb-6 ml-4">
                         <div class="absolute w-4 h-4 -left-2 bg-blue-600 border-2 border-white rounded-full"></div>
-                        <h4 class="font-semibold text-gray-800">Inspirer confiance à nos partenaires et mériter leur confiance.</h4>
+                        <h4 class="font-semibold text-gray-800"> {{__('main/includes/values.card-5-3')}} </h4>
                     </li>
                 </ul>
             </div>
@@ -303,8 +303,8 @@
             <!-- Image Section -->
             <div class="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
                 <img
-                    src="{{asset('images/values/fiabilite.avif')}}"
-                    alt="Fiabilité Image"
+                    src="{{asset('images/values/rse.jpg')}}"
+                    alt="Responsabilité Image"
                     class="object-cover w-full h-full"
                 />
             </div>
@@ -312,27 +312,34 @@
             <!-- Content Section -->
             <div class="p-6">
                 <h5 class="block mb-2 font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900">
-                    Fiabilité
+                    {{__('main/includes/values.card-6-title')}}
                 </h5>
     
                 <!-- List of Values -->
                 <ul class="relative mt-6 border-l-2 border-blue-600">
                     <li class="mb-6 ml-4">
                         <div class="absolute w-4 h-4 -left-2 bg-blue-600 border-2 border-white rounded-full"></div>
-                        <h4 class="font-semibold text-gray-800">Culture de solutions applicables.</h4>
+                        <h4 class="font-semibold text-gray-800">
+                            {{__('main/includes/values.card-6-1')}}
+                        </h4>
                     </li>
                     <li class="mb-6 ml-4">
                         <div class="absolute w-4 h-4 -left-2 bg-blue-600 border-2 border-white rounded-full"></div>
-                        <h4 class="font-semibold text-gray-800">Conformité aux cahiers des charges et satisfaction du client.</h4>
+                        <h4 class="font-semibold text-gray-800">
+                           {{__('main/includes/values.card-6-2')}}
+                        </h4>
                     </li>
                     <li class="mb-6 ml-4">
                         <div class="absolute w-4 h-4 -left-2 bg-blue-600 border-2 border-white rounded-full"></div>
-                        <h4 class="font-semibold text-gray-800">Inspirer confiance à nos partenaires et mériter leur confiance.</h4>
+                        <h4 class="font-semibold text-gray-800">
+                            {{__('main/includes/values.card-6-3')}}
+                        </h4>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
+    
     
 
 

@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Contact;
 use Illuminate\Http\Request;
+use App\Mail\EmailContact;
+use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
@@ -55,4 +57,51 @@ class ContactController extends Controller
             'message' => 'Contact supprimé avec succès.',
         ]);
     }
+
+    public function ContacterEDAH(Request $request)
+    {
+        // Récupérer les informations du formulaire
+        $data = $request->all();
+        $data['typeMessage'] = 'contact';
+    
+        // Récupérer la réponse du reCAPTCHA du client
+        
+    
+     
+                // Envoi des emails
+                $this->envoiDesEmails($data);
+    
+                // Réponse de la requête
+                return response()->json('Votre message a été transmis');
+            
+    }
+    
+        //
+        public function PostulerChezEDAH(Request $request)
+        {
+            // recuperation des informations du formulaire
+            $data = $request->all();
+            $data['typeMessage'] = 'carriere';
+    
+            // envoi des emails
+            $this->envoiDesEmails($data);
+    
+            // reponse de la requette
+            return response()->json('Votre dossier a été transmis');
+        }
+    
+        public function envoiDesEmails($data) {
+    
+            # code...Volet Visiteur
+            // $email_visiteur = $data['email'];
+            // Mail::to($email_visiteur)
+            //     ->send(new EmailVisiteurSmartex($data));
+    
+            # code...EDAH
+            $email_edah = 'jsomakpo@smartex-expertises.com';
+            Mail::to($email_edah)
+                ->send(new EmailContact($data));
+            
+        }
+    
 }

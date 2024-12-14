@@ -36,9 +36,9 @@
     <!-- Container -->
     <div class="relative container mx-auto px-4 h-full flex items-center">
         <div class="text-center w-full">
-            <h2 class="text-5xl font-extrabold text-white drop-shadow-lg">Nous Connaître</h2>
+            <h2 class="text-5xl font-extrabold text-white drop-shadow-lg"> {{__('main/contents/about-us.title')}} </h2>
             <p class="text-white mt-2 text-lg font-light tracking-wide">
-                <span class="text-gray-300">Accueil</span> <span class="mx-2 text-white">&#x2022;</span> <span class="text-gray-300">À propos de nous</span>
+                <span class="text-gray-300">{{__('main/contents/about-us.title-1-1')}}</span> <span class="mx-2 text-white">&#x2022;</span> <span class="text-gray-300">{{__('main/contents/about-us.title-1-2')}}</span>
             </p>
         </div>
     </div>

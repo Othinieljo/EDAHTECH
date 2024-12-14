@@ -17,8 +17,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 </head>
-<body class="font-raleway " style="overflow-x: hidden">
-    <div class="overflow-x-hidden">
+<body class="font-raleway " style="overflow-y: hidden">
+    <div class="overflow-hidden">
 
    
      @include('landing.includes.headers')
